@@ -3675,7 +3675,7 @@ body {
   background-color: #e8e9ee;
   padding: 7px 10px;
 }
-@media only screen and (max-width: 609px) {
+@media only screen and (max-width: 766px) {
   /* line 67, ../sass/screen.scss */
   .searchbar {
     width: -webkit-calc(100% - 20px);
@@ -3683,7 +3683,7 @@ body {
     width: calc(100% - 20px);
   }
 }
-@media only screen and (min-width: 610px) {
+@media only screen and (min-width: 768px) {
   /* line 67, ../sass/screen.scss */
   .searchbar {
     width: 746px;

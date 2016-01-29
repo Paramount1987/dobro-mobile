@@ -1,5 +1,5 @@
 var swipeTries = 1,
-	MIN_WIDTH = 609,
+	MIN_WIDTH = 766,
 	widerElements = [
 		'.shadowed',
 		'.page',

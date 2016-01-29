@@ -1,5 +1,5 @@
-$small: 609px;
-$large: 610px;
+$small: 766px;
+$large: 768px;
 
 @mixin respond-to($media) {
 	@if ($media == handhelds) {
