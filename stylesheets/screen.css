@@ -115,7 +115,7 @@
 }
 
 /* line 102, ../sass/objects/common.scss */
-.imagepart, .btn i.ready-arrow, .arrow-more-grey, .arrow-more-dark-grey, .daw, .back-arrow, i.adult, i.children, i.elderly, i.animals, .socials-icons-big li a.social-mail, .socials-icons-big li a.social-odnoklassniki, .socials-icons-big li a.social-twitter, .socials-icons-big li a.social-facebook, .socials-icons-big li a.social-vk, .add-icon, .plans, .stars, .usefull, .man-of-kindness, .successfull-projects, .help-icon-big, .pounch-icon-big, .urgently-icon-big, .heart-icon, .arrow-down-big, .arrow-down-small, .next-arrow.top, .history-submenu li i, .history-header i.nextblue, .hands-left, .hands-right, .content-info .cityinfo .time .timer, .content-info .payment-info li i, .needhelp:nth-child(2) .morebtn .linksblock .pages i.nextblue, .helpitems li a i, .subblock ul.level-2 li a .collapsible, .project .content-info .stars, .project .thanks h4 .thanks-bird, .project.grey .payment-info li i, .content .idea, .feedback-ready .feedback-bird-container .feedback-bird, a.payment .nextblue, .dog, .helpwomen, .logo {
+.imagepart, .btn i.ready-arrow, .arrow-more-grey, .arrow-more-dark-grey, .daw, .back-arrow, i.adult, i.children, i.elderly, i.animals, .socials-icons-big li a.social-mail, .socials-icons-big li a.social-odnoklassniki, .socials-icons-big li a.social-twitter, .socials-icons-big li a.social-facebook, .socials-icons-big li a.social-vk, .add-icon, .plans, .stars, .usefull, .man-of-kindness, .successfull-projects, .help-icon-big, .pounch-icon-big, .urgently-icon-big, .heart-icon, .arrow-down-big, .arrow-down-small, .next-arrow.top, .history-submenu li i, .history-header i.nextblue, .hands-left, .hands-right, .content-info .cityinfo .time .timer, .content-info .payment-info li i, .needhelp:nth-child(2) .morebtn .linksblock .pages i.nextblue, .helpitems li a i, .subblock ul.level-2 li a .collapsible, .project .content-info .stars, .project .thanks h4 .thanks-bird, .project.grey .payment-info li i, .content .idea, .feedback-ready .feedback-bird-container .feedback-bird, a.payment .nextblue, .dog, .helpwomen {
   background-image: url("../images/images.png");
   background-repeat: no-repeat;
   background-size: 390px 572px;
@@ -3649,34 +3649,35 @@ body {
 
 /* line 46, ../sass/screen.scss */
 .logo {
+  background: url("../images/dobro-logo.png") no-repeat;
+  background-size: 171px 22px;
   width: 171px;
   height: 22px;
-  background-position: -6px -36px;
   margin-top: 11px;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .logo:active {
   background-color: #147fcb;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .search:active {
   background-color: #147fcb;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .searchblock {
   display: none;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .searchbar {
   background-color: #e8e9ee;
   padding: 7px 10px;
 }
 @media only screen and (max-width: 766px) {
-  /* line 67, ../sass/screen.scss */
+  /* line 69, ../sass/screen.scss */
   .searchbar {
     width: -webkit-calc(100% - 20px);
     width: -moz-calc(100% - 20px);
@@ -3684,13 +3685,13 @@ body {
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 67, ../sass/screen.scss */
+  /* line 69, ../sass/screen.scss */
   .searchbar {
     width: 746px;
   }
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .searchbar .form-field.text {
   height: 12px;
   border-bottom: 1px solid #cbcbcb;
@@ -3717,7 +3718,7 @@ body {
   width: calc(100% - 108px);
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .searchbar .form-field.button {
   height: 32px;
   border-bottom: 1px solid #f6921e;
@@ -3744,17 +3745,17 @@ body {
   text-decoration: none;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .orange {
   color: #ff801e;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .blue {
   color: #228ede;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .title-mail {
   background-color: #fff;
   text-align: center;
@@ -3765,7 +3766,7 @@ body {
   z-index: 2;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .arc {
   background-color: #fff;
   width: -webkit-calc(100% + 100px);
@@ -3789,7 +3790,7 @@ body {
   z-index: 0;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .arc.bottom {
   background-color: #d3ebf5;
   height: 120px;
@@ -3797,17 +3798,17 @@ body {
   margin-left: -50px;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .arc.bottom.project {
   background-color: #e4f6f9;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 h4 {
   font-size: 20px;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .content.slider {
   background-color: #d3ebf5;
   padding-bottom: 10px;
