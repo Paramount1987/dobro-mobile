@@ -1,0 +1,27 @@
+@import "mixins"
+@import "constants"
+@import "common"
+
+
+.feedback-ready
+  @extend .pull-left
+  background-color: #baddf7
+  @include calc('width', "100% - 20px")
+  padding: 20px 10px 0px 10px
+  @include border-radius-equals(5px)
+  min-height: 88px
+  padding-bottom: 20px
+  margin-bottom: 50px
+  span
+    @extend .pull-left
+    width: 100%
+    text-align: center
+  .feedback-bird-container
+    @extend .pull-left
+    width: 100%
+    margin-top: 25px
+    .feedback-bird
+      @extend .absolute-left
+      @extend .imagepart
+      @include background-position(162px, 75px, -221px, -112px)
+      @include calc('margin-left', "50% - 81px")

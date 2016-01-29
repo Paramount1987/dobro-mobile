@@ -1,0 +1,55 @@
+@import "mixins"
+@import "constants"
+@import "common"
+
+.content
+  &.payment
+    background-color: #ffffff
+    padding: 10px
+    @include calc('width', "100% - 20px")
+    h4
+      font-size: 20px
+      padding: 0px
+      margin: 0px
+    .aboutlinks
+      padding-top: 0px !important
+.payment-table
+  @extend .pull-left
+  @extend .fullwidth
+  background-color: #ffffff
+  .row
+    @extend .pull-left
+    @extend .fullwidth
+    padding: 5px 0px
+    &.data
+      &:nth-child(even)
+        background-color: #f4f4f4
+    .leftside
+      @extend .pull-left
+      width: 50%
+      text-align: right
+      span
+        width: 140px
+        text-align: left
+        @extend .pull-right
+        padding: 0px 5px
+    .rightside
+      @extend .pull-left
+      width: 50%
+      text-align: left
+      span
+        width: 140px
+        text-align: center
+        @extend .pull-left
+        padding: 0px 5px
+a.payment
+  span
+    @extend .pull-left
+    width: 245px
+    padding: 0px 10px
+  .nextblue
+    @extend .pull-right
+    margin-top: 15px
+    margin-right: 5px
+    @extend .imagepart
+    @include background-position(10px, 15px, -6px, -208px)

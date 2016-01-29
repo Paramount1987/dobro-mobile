@@ -1,0 +1,53 @@
+@import "objects/mixins"
+@import "objects/constants"
+@import "objects/common"
+
+.slideimages
+  //@extend .pull-left
+  height: 130px
+  overflow: hidden
+  padding-left: 10px
+
+.slideimages
+  .images
+    padding: 20px 0px 0px 0px
+    @extend .pull-left
+    height: 100%
+    width: 100%
+    .itemcontainer
+      width: 284px
+      padding: 0px 20px 0px 0px
+      margin: 0px
+      position: absolute
+      float: left
+      .item
+        @extend .pull-left
+        background-color: #ffffff
+        @include border-radius(10px, 10px, 10px, 10px)
+        @include box-shadow('', 2px, 2px, 0px, 1px, 215, 215, 215, 1)
+        margin: 0px
+        padding: 10px
+        height: 70px
+        width: 260px
+        .thumbnail
+          @extend .pull-left
+          img
+            @include border-radius(5px, 5px, 5px, 5px)
+            width: 120px
+        .description
+          @extend .pull-left
+          padding-left: 10px
+          font-size: 16px
+          color: #333333
+.slidercount
+  background-color: #ffffff
+  @include border-radius(5px,5px,5px,5px)
+  @include center-block(0px, 0px)
+  width: 50%
+  height: 5px
+  .sliderposition
+    @extend .pull-left
+    background-color: #228ede
+    width: 30%
+    height: 5px
+    @include border-radius(5px,5px,5px,5px)

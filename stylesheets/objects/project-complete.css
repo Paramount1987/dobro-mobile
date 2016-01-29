@@ -1,0 +1,82 @@
+/* line 1, ../../sass/objects/project-complete.sass */
+.project-complete {
+  position: relative;
+}
+
+/* line 4, ../../sass/objects/project-complete.sass */
+.stars-bg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 10px;
+  width: 60px;
+  height: 55px;
+  background-position: -116px -357px;
+  background-image: url("../images/images.png");
+  background-repeat: no-repeat;
+  background-size: 390px 572px;
+}
+
+/* line 17, ../../sass/objects/project-complete.sass */
+.project-complete .base .info span {
+  padding: 0 10px 2px 2px;
+}
+
+/* line 20, ../../sass/objects/project-complete.sass */
+.project-complete .pouch-filled {
+  width: 100% !important;
+}
+
+/* line 23, ../../sass/objects/project-complete.sass */
+.project-complete .help-description-project {
+  margin-top: 10px;
+}
+
+/* line 27, ../../sass/objects/project-complete.sass */
+.project-complete .hand-description .orange {
+  display: inline-block;
+  padding: 0 0 0 5px;
+}
+
+/* line 32, ../../sass/objects/project-complete.sass */
+.project-complete .btn-grey {
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+/* line 36, ../../sass/objects/project-complete.sass */
+.socials-left-c {
+  clear: both;
+  padding: 25px 0 15px 0;
+}
+
+/* line 40, ../../sass/objects/project-complete.sass */
+.copyright-c {
+  clear: both;
+}
+
+/* line 43, ../../sass/objects/project-complete.sass */
+.project.grey .payment-info li .description .help-description-project .list-img {
+  list-style: none;
+  padding-left: 0;
+  font-size: 14px;
+}
+/* line 47, ../../sass/objects/project-complete.sass */
+.project.grey .payment-info li .description .help-description-project .list-img li {
+  float: none !important;
+  position: relative;
+  padding-left: 22px;
+}
+/* line 51, ../../sass/objects/project-complete.sass */
+.project.grey .payment-info li .description .help-description-project .list-img li:after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  left: 0;
+  display: block;
+  width: 13px;
+  height: 14px;
+  background: url("../images/list-img.png") no-repeat;
+  background-size: contain;
+}

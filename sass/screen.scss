@@ -1,0 +1,154 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "objects/mixins";
+@import "objects/constants";
+@import "objects/common";
+@import "objects/slider";
+@import "objects/history";
+@import "objects/needhelp";
+@import "objects/footer";
+@import "objects/subbock";
+@import "objects/project";
+@import "objects/about";
+@import "objects/forms";
+@import "objects/feedback";
+@import "objects/payment";
+@import "objects/press";
+@import "objects/funds";
+@import "objects/profile";
+@import "objects/myhelp";
+@import "objects/flex";
+@import "objects/project-complete";
+
+body, html {
+	margin: 0px;
+	min-height: 100%;
+	min-width: 100%;
+}
+body {
+  font-family: $font-base;
+  background-color: #E6E6E6;
+	color: #333333;
+}
+
+.header {
+	@extend .pull-left;
+	width: 100%;
+	height: 50px;
+	background-color: $color-blue-background;
+	min-width: 300px;
+	z-index: 2;
+}
+
+.logo {
+	@extend .pull-left;
+	@extend .imagepart;
+	@include background-position(171px, 22px, -6px, -36px);
+	margin-top: 11px;
+}
+.logo:active{
+	background-color: #147fcb;
+}
+
+.search {
+	@extend .pull-right;
+}
+.search:active{
+	background-color:#147fcb;
+}
+
+.searchblock {
+	display: none;
+}
+
+.searchbar {
+	@extend .pull-left;
+	background-color: #e8e9ee;
+	padding: 7px 10px;
+	@include respond-to(handhelds) {
+		@include calc('width', "100% - 20px");
+	}
+	@include respond-to(medium-screens) { width: 746px; }
+}
+
+.searchbar .form-field.text {
+	@extend .pull-left;
+	height: 12px;
+	border-bottom: 1px solid #cbcbcb;
+	border-left: 1px solid #cbcbcb;
+	border-top: 1px solid #cbcbcb;
+	border-right: none;
+	padding: 15px 9px 15px 15px;
+	margin: 0px;
+	font-size: 16px;
+	@include border-radius(5px, 0px, 5px, 0px);
+	@include calc('width', "100% - 108px");
+}
+
+.searchbar .form-field.button {
+	@extend .absolute-left;
+	height: 32px;
+	border-bottom: 1px solid #f6921e;
+	border-right: 1px solid #f6921e;
+	border-top: 1px solid #f6921e;
+	border-left: none;
+	background-color: #f8a631;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px 15px 0px;
+	@include border-radius(0px, 5px, 0px, 5px);
+	text-decoration: none;
+}
+
+.orange {
+	color: $font-color-orange;
+}
+
+.blue {
+	color: $font-color-blue;
+}
+
+.title-mail {
+	@extend .pull-left;
+	background-color: #fff;
+	text-align: center;
+	padding: 0px 10px;
+	@include calc('width', "100% - 20px");
+	z-index: 2;
+}
+
+.arc {
+	background-color: #fff;
+	@include calc('width', "100% + 100px");
+	@extend .pull-left;
+	@include border-radius(0px, 0px, 55%, 55%);
+	height: 50px;
+	margin-top: -25px;
+	margin-left: -50px;
+	z-index: 0;
+}
+
+.arc.bottom {
+	background-color: #d3ebf5;
+	height: 120px;
+	margin-top: -88px;
+	margin-left: -50px;
+}
+
+.arc.bottom.project {
+	background-color: #e4f6f9;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+.content.slider {
+	background-color: #d3ebf5;
+	padding-bottom: 10px;
+}
+

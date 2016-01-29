@@ -1,0 +1,55 @@
+@import "mixins"
+@import "constants"
+@import "common"
+
+.request
+	padding: 10px 0px 0px 0px
+	display: none
+	.form-group
+		padding-bottom: 0px
+
+.form-group
+	@extend .pull-left
+	padding-bottom: 20px
+	label
+		font-size: 18px
+		font-weight: bold
+	input, textarea
+		@include calc('width', "100% - 15px")
+		padding: 10px 5px
+		border: 1px solid #c2c4c6
+		@include border-radius-equals(5px)
+		font-size: 16px
+		&.error
+			border: 1px solid #ff801e
+	textarea
+		min-height: 100px
+	.error-message
+		color: #ff801e
+		font-size: 16px
+		@extend .pull-left
+		@extend .fullwidth
+		padding-top: 5px
+
+.checkbox
+	&.sex
+		width: 140px
+	input[type="checkbox"]
+		@extend .pull-left
+		width: 25px
+		height: 25px
+		margin-right: 10px
+		margin-top: -3px
+		@include border-radius-equals(5px)
+	span
+		margin-top: 7px
+		font-size: 16px
+		font-weight: bold
+		max-width: 300px
+		min-width: 150px
+
+
+.horizontal
+	label
+		@extend .pull-left
+		width: 200px

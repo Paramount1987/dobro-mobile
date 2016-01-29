@@ -1,0 +1,82 @@
+@import "mixins"
+@import "constants"
+@import "common"
+
+.press
+	background-color: #ffffff
+	padding: 10px
+	@include calc('width', "100% - 20px")
+	&.grey
+		background-color: #f4f4f4
+		border: none
+	h4
+		padding: 0px
+		margin: 0px
+	border-bottom: 1px solid #cdd4d8
+
+	.contact
+		@extend .pull-left
+		@extend .fullwidth
+		margin-bottom: 15px
+		.avatar
+			@extend .pull-left
+			@include border-radius-equals(5px)
+			overflow: hidden
+			width: 80px
+			height: 80px
+			img
+				height: 100%
+		.info
+			@extend .pull-left
+			padding-left: 10px
+			height: 34px
+			padding-top: 46px
+	.news
+		@extend .pull-left
+		@extend .fullwidth
+		padding-top: 15px
+		padding-bottom: 15px
+		.news-item
+			@extend .pull-left
+			background-color: #ffffff
+			clear: both
+			margin-bottom: 20px
+			padding: 10px
+			@include calc('width', "100% - 20px")
+			@include border-radius-equals(5px)
+			@include box-shadow('', 2px, 2px, 0px, 1px, 215, 215, 215, 1)
+			.newsimage
+				@extend .pull-left
+				height: 75px
+				width: 75px
+				overflow: hidden
+				@include border-radius-equals(6px)
+				background-color: lightgray
+			.description
+				@extend .pull-left
+				@include calc('width', "100% - 85px")
+				padding-left: 10px
+			.date
+				color: #666666
+				font-size: 12px
+				@extend .pull-left
+				@extend .fullwidth
+				padding-bottom: 10px
+			a
+				max-width: 500px
+				@extend .pull-left
+.press-help
+	margin: 0px 0px 20px 0px
+	padding: 0px 0px 0px 0px
+	@extend .pull-left
+	list-style: none
+	li
+		@extend .pull-left
+		clear: both
+		margin: 10px 0px 10px 0px
+		padding: 0px
+		span
+			@extend .pull-left
+			@include calc('width', "100% - 25px")
+			padding-left: 10px
+

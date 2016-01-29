@@ -1,0 +1,51 @@
+@import "mixins"
+@import "constants"
+@import "common"
+
+.grey
+  &.about
+    border-bottom: 1px solid #cdd4d8
+
+.player
+  @extend .pull-left
+  @extend .fullwidth
+  @include border-radius-equals(5px)
+  overflow: hidden
+  min-height: 190px
+  margin-bottom: 25px
+
+.content
+  .idea
+    @extend .pull-left
+    @extend .imagepart
+    @include background-position(75px, 80px, -220px, -4px)
+  .idea-title
+    @extend .pull-left
+    @include calc('width', "100% - 100px")
+    padding-left: 20px
+    padding-top: 15px
+    font-size: 18px
+  .needhelp
+    .aboutlink
+      @extend .pull-left
+      @extend .fullwidth
+      padding: 10px 0px
+      margin: 10px 0px
+  .footer
+    &.about
+      .links
+        @extend .pull-left
+        width: 100%
+        clear: both
+        &.wider
+          @include calc('width', "50% - 20px")
+          clear: none
+      .socials-left
+        @extend .pull-right
+        @extend .center
+        width: 100%
+        clear: both
+        &.wider
+          width: 50%
+      .aboutlinks
+        padding-top: 25px

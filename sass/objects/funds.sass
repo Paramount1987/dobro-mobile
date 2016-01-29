@@ -1,0 +1,67 @@
+@import "mixins"
+@import "constants"
+@import "common"
+
+.funds
+	@extend .pull-left
+	@include calc('width', "100% - 20px")
+	padding: 10px 10px
+	background-color: #ffffff
+	&.lesswidth
+		padding: 10px 20px
+		@include calc('width', "100% - 40px")
+	.content-info
+		padding: 10px
+	h4
+		padding: 0px
+		margin: 0px
+	&.bordered
+		border-bottom: 1px solid #cdd4d8
+	input
+		font-size: 18px
+		border: 1px solid #c2c4c6
+		background-color: #f2f2f2
+	p
+		padding: 10px 0px
+		@extend .pull-left
+		@extend .fullwidth
+		margin: 0px
+		font-size: 14px
+		&.cityname
+			padding-left: 15px
+	.help-block
+		@extend .fullwidth
+		@extend .pull-left
+		clear: both
+		padding-bottom: 5px
+		padding-top: 5px
+		i
+			margin-right: 20px
+	ol
+		padding: 0px 0px 0px 20px
+		li
+			padding: 10px 0px
+			@extend .pull-left
+	.news-item
+		a
+			line-height: 25px
+	.tabs
+		@extend .pull-left
+		li
+			width: 50%
+	.content-info.help:nth-child(odd)
+		&.wider
+			@include calc('width', '50% - 25px')
+			margin-right: 5px
+			margin-left: 0px
+	.content-info.help:nth-child(even)
+		&.wider
+			@include calc('width', '50% - 25px')
+			margin-right: 0px
+			margin-left: 5px
+.dog
+	@extend .absolute-left
+	@extend .imagepart
+	@include background-position(84px, 43px, -117px, -256px)
+	right: 15px
+	top: -43px

@@ -1,0 +1,318 @@
+@import "mixins"
+@import "constants"
+@import "common"
+
+.hands-left
+	float: left
+	position: absolute
+	@extend .imagepart
+	@include background-position(68px, 61px, -75px, -125px)
+	z-index: 2
+	margin-left: -20px
+	margin-top: -18px
+.hands-right
+	float: left
+	position: absolute
+	right: -10px
+	margin-top: -18px
+	@extend .imagepart
+	@include background-position(68px, 61px, 1px, -125px)
+	z-index: 2
+.needhelp
+	@extend .pull-left
+	padding: 10px 10px 0px 10px
+	@include calc('width', '100% - 20px')
+	background-color: #ffe5c7
+	&:nth-child(2)
+		background-color: #d3ebf5
+.content-info
+	@extend .pull-left
+	@include calc('width', '100% - 20px')
+	@include box-shadow('', 2px, 2px, 0px, 1px, 215, 215, 215, 1)
+	background-color: #ffffff
+	padding: 20px 10px 20px 10px
+	margin-bottom: 10px
+	@include border-radius(10px, 10px, 10px, 10px)
+	h3.blue-header
+		text-align: center
+		font-size: 24px
+		margin: 0px 0px
+		color: #228ede
+		padding-bottom: 18px
+		position: relative
+		top: -1px
+
+
+	.cityinfo
+		@extend .pull-left
+		font-size: 12px
+		color: #808080
+		margin-top: -10px
+		clear: both
+		span
+			@extend .pull-left
+			padding: 3px 10px 2px 0px
+		.danger
+			background-color: #fac400
+			@include border-radius(10px, 10px, 10px, 10px)
+			padding: 3px 10px
+			color: #333333
+		.time
+			padding: 3px 10px
+			.timer
+				@extend .pull-left
+				@extend .imagepart
+				@include background-position(12px, 12px, -6px, -102px)
+				margin-top: 1px
+			.days-title, .days
+				padding: 0px 3px
+			.days
+				color: #ff801e
+	h4,.h4
+		font-size: 21px
+		margin: 5px 0px 0px 0px
+		font-weight: bold
+		@extend .pull-left
+		width: 100%
+		text-align: left
+		color: #333
+	.h4:hover
+		color: #0080d0	
+	.item-info
+		@extend .pull-left
+		width: 100%
+		clear: both
+		padding: 10px 0px
+		.image-container
+			@extend .pull-left
+			width: 107px
+			overflow: hidden
+			height: 107px
+			@include border-radius-equals(5px)
+		.item-description
+			@extend .pull-left
+			@include calc('width', '100% - 117px')
+			padding-left: 10px
+			font-size: 14px
+			span
+				&.info-desc
+					clear: both
+					@extend .pull-left
+	.payment-info
+		@extend .pull-left
+		@extend .fullwidth
+		padding: 5px 0px
+		margin: 0px
+		list-style: none
+		font-size: 16px
+		&.first
+			padding-left: 0px
+			width: 100%
+			&.wider
+				padding-left: 117px
+				width: 80%
+		li
+			padding: 10px 0px
+			margin: 0px
+			@extend .pull-left
+			.left-a-bit
+				padding-right: 20px
+				font-size: 14px
+				font-weight: bold
+				padding-top: 10px
+			i
+				@extend .pull-left
+				@extend .imagepart
+				&.pouch
+					@include background-position(28px, 24px, -26px, -98px)
+				&.hand
+					@include background-position(28px, 24px, -51px, -97px)
+				&.arrow
+					@include background-position(16px, 16px, -86px, -101px)
+					margin-left: 5px
+					margin-top: 3px
+					&.active
+						@include background-position(16px, 16px, -188px, -101px)
+			.description
+				@extend .pull-left
+				@include calc('width', '100% - 33px')
+				padding-left: 5px
+				.hand-description
+					span
+						@extend .pull-left
+						border-bottom: 1px dashed #2285d5
+						font-weight: bold
+				.hand-description:after
+					content: ""
+					display: block
+					clear: both	
+				.help-description
+					display: none
+					padding-top: 15px
+					margin-left: -5px
+					padding-left: 5px
+					@extend .pull-left
+					width: 100%
+					ul
+						padding-left: 15px
+						list-style: disc
+						font-size: 16px
+				.pouch-chart
+					@extend .pull-left
+					margin-top: 15px
+					@include calc("width", "100% - 20px")
+					background-color: #d8d8d8
+					height: 5px
+					@include border-radius(3px, 3px, 3px, 3px)
+					.pouch-filled
+						@extend .pull-left
+						width: 90%
+						height: 5px
+						@include border-radius(3px, 3px, 3px, 3px)
+						background-color: #ff801e
+	&.featured
+		h4, .cityinfo
+			display: block
+		.item-description
+			h4, .h4,.cityinfo
+				display: none
+		&.wider
+			.item-info
+				padding-top: 0px
+			h4, .h4,.cityinfo
+				display: none
+			.item-description
+				h4,.h4
+					width: 50%
+					padding-bottom: 10px
+				.cityinfo
+					margin-top: 0px
+				h4,.h4, .cityinfo
+					clear: both
+					display: block
+
+
+.needhelp
+	&.about
+		&.wider
+			.content-info:nth-child(odd)
+				@include calc('width', '50% - 25px')
+				margin-right: 5px
+				margin-left: 0px
+			.content-info:nth-child(even)
+				@include calc('width', '50% - 25px')
+				margin-right: 0px
+				margin-left: 5px
+
+.needhelp:nth-child(2)
+	&.wider
+		.content-info:nth-child(odd)
+			@include calc('width', '50% - 25px')
+			margin-right: 5px
+			margin-left: 0px
+		.content-info:nth-child(even)
+			@include calc('width', '50% - 25px')
+			margin-right: 0px
+			margin-left: 5px
+	.morebtn
+		@extend .pull-left
+		width: 100%
+		text-align: center
+		padding-top: 15px
+		padding-bottom: 10px
+		margin-bottom: 5px
+		.linksblock
+			width: 300px
+			@include center-block(0px, 0px)
+			background-color: #ffffff
+			@include box-shadow('', 3px, 3px, 0px, 0px, 215, 215, 215, 1)
+			@include border-radius(4px, 4px, 4px, 4px)
+			padding: 10px 0px
+			.pages
+				margin-left: 14px
+				a
+					padding: 10px
+					margin: 10px 0px
+					color: #228fdf
+					text-decoration: none
+					font-size: 18px
+					&.active
+						color: #808080
+				i.nextblue
+					@extend .pull-right
+					@extend .imagepart
+					@include background-position(14px, 14px, 0px, -208px)
+					margin-right: 10px
+					margin-top: 5px
+
+.select
+	@extend .pull-left
+	width: 100%
+	padding-top: 15px
+	padding-bottom: 15px
+	span
+		@extend .pull-left
+		width: 20px
+		font-size: 18px
+		padding-top: 7px
+	select
+		@extend .pull-left
+		@include calc('width', '100% - 20px')
+		background-color: #f1f1f1
+		border: 1px solid #c1c3c5
+		@include border-radius(4px, 4px, 4px, 4px)
+		font-size: 18px
+		padding: 5px
+		height: 36px
+		&.center
+			margin-left: 10px
+
+.helpitems
+	@extend .pull-left
+	width: 100%
+	list-style: none
+	margin: 0px
+	padding: 0px 0px 0px 0px
+	li
+		@extend .pull-left
+		margin: 0px 0px 5px 0px
+		padding: 0px
+		height: 39px
+		word-wrap: break-word
+		width: 50%
+		&.wider
+			width: 25%
+		a
+			@extend .pull-left
+			font-family: "Helvetica Neue", Arial, Helvetica, sans-serif
+			color: #333333
+			text-decoration: none
+			font-size: 14px
+			padding: 7px 0px 5px 5px
+			@include calc('width', '100% - 13px')
+			&.active
+				background-color: #d3ebf5
+				@include border-radius(5px, 5px, 5px, 5px)
+				@include box-shadow(1, 0px, 3px, 0px, 0px, 215, 215, 215, 1)
+			span
+				@extend .pull-left
+				padding-top: 5px
+				padding-left: 5px
+				@include calc('width', '100% - 37px')
+				text-align: left
+			i
+				@extend .pull-left
+				@extend .imagepart
+				margin: 2px
+				&.money
+					@include background-position(25px, 25px, -108px, -65px)
+				&.make
+					@include background-position(25px, 25px, -133px, -65px)
+				&.by-card
+					@include background-position(25px, 25px, -159px, -65px)
+				&.donor
+					margin-left: 5px
+					@include background-position(25px, 25px, -185px, -65px)
+
+.woutpadding .item-info
+	padding: 10px

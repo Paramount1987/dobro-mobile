@@ -1,0 +1,68 @@
+$small: 609px;
+$large: 610px;
+
+@mixin respond-to($media) {
+	@if ($media == handhelds) {
+		@media only screen and (max-width: $small) {
+			@content;
+		}
+	}
+	@else {
+		@if ($media == medium-screens) {
+			@media only screen and (min-width: $large) { @content; }
+		}
+	}
+}
+
+@mixin border-radius ($top_left, $top_right, $bottom_left, $bottom_right) {
+	-webkit-border-top-left-radius: $top_left;
+	-moz-border-radius-topleft: $top_left;
+	border-top-left-radius: $top_left;
+
+	-webkit-border-top-right-radius: $top_right;
+	-moz-border-radius-topright: $top_right;
+	border-top-right-radius: $top_right;
+
+	-webkit-border-bottom-left-radius: $bottom_left;
+	-moz-border-radius-bottomleft: $bottom_left;
+	border-bottom-left-radius: $bottom_left;
+
+	-webkit-border-bottom-right-radius: $bottom_right;
+	-moz-border-radius-bottomright: $bottom_right;
+	border-bottom-right-radius: $bottom_right;
+}
+
+@mixin border-radius-equals($value) {
+	-webkit-border-radius: #{$value};
+	-moz-border-radius: #{$value};
+	border-radius: #{$value};
+}
+
+@mixin calc($key, $value) {
+	#{$key}: -webkit-calc(#{$value});
+	#{$key}: -moz-calc(#{$value});
+	#{$key}: calc(#{$value});
+}
+
+@mixin center-block($top, $bottom) {
+	margin: #{$top} auto #{$bottom} auto;
+}
+
+@mixin background-position($width, $height, $leftposition, $topposition) {
+	width: #{$width};
+	height: #{$height};
+	background-position: #{$leftposition} #{$topposition};
+}
+
+@mixin box-shadow($inset, $distance, $angle, $blur, $spread, $red, $blue, $green, $opacity) {
+	@if $inset == '' {
+		-webkit-box-shadow: #{$distance} #{$angle} #{$blur} #{$spread} rgba($red, $green, $blue, $opacity);
+		-moz-box-shadow: #{$distance} #{$angle} #{$blur} #{$spread} rgba($red, $green, $blue, $opacity);
+		box-shadow: #{$distance} #{$angle} #{$blur} #{$spread} rgba($red, $green, $blue, $opacity);
+	}
+	@else {
+		-webkit-box-shadow: inset #{$distance} #{$angle} #{$blur} #{$spread} rgba($red, $green, $blue, $opacity);
+		-moz-box-shadow: inset #{$distance} #{$angle} #{$blur} #{$spread} rgba($red, $green, $blue, $opacity);
+		box-shadow: inset #{$distance} #{$angle} #{$blur} #{$spread} rgba($red, $green, $blue, $opacity);
+	}
+}

@@ -1,0 +1,134 @@
+@import "mixins"
+@import "constants"
+@import "common"
+
+.content
+	&.myhelp
+		.projecttypes
+			padding-bottom: 20px
+			padding-top: 10px
+		background-color: #ffffff
+		padding: 10px
+		@extend .pull-left
+		@include calc("width", "100% - 20px")
+		.before-icon
+			@extend .pull-left
+			@include calc("width", "100% - 102px")
+		.woman
+			@extend .pull-left
+			width: 102px
+			height: 115px
+		.helpall
+			padding: 0px
+			font-size: 17px
+			@extend .pull-left
+			@extend .fullwidth
+			margin-bottom: 5px
+		.numbers
+			@extend .pull-left
+			@extend .fullwidth
+			list-style: none
+			padding: 10px 0px
+			margin: 0px
+			li
+				@extend .pull-left
+				padding: 0px 0px 20px 0px
+				margin: 0px
+				i
+					@extend .pull-left
+					background-color: #fbc500
+					color: #ffffff
+					@include border-radius-equals(50%)
+					text-align: center
+					height: 29px
+					width: 32px
+					padding-top: 3px
+					font-size: 23px
+					font-weight: bold
+				span
+					@extend .pull-left
+					padding-left: 20px
+					@include calc("width", "100% - 52px")
+		h4
+			padding: 0px
+			margin: 0px
+		.widget
+			@extend .pull-left
+			@include calc("width", "100% - 20px")
+			padding: 10px
+			@include border-radius-equals(10px)
+			background-color: #f4f4f4
+			margin-bottom: 10px
+			.about-header
+				padding: 5px 0px
+				span
+					@extend .pull-left
+					@include calc("width", "100% - 20px")
+				.arrow
+					@extend .pull-right
+					width: 20px
+					.arrow-down-small
+						margin-top: 3px
+						//margin-right: -20px
+				&:after
+					content: ""
+					display: block
+					clear: both
+					height: 0				
+			.about-desc
+				margin-top: 20px
+				background-color: #ffffff
+				@extend .pull-left
+				@include border-radius-equals(5px)
+				@include calc("width", "100% - 20px")
+				padding: 20px 10px
+				display: none
+			.about-desc.visible
+				display: block	
+			.contentinfo
+				width: 250px
+				@include center-block(0px, 0px)
+				text-align: center
+		.help-about
+			list-style: none
+			padding: 0px
+			margin: 0px
+			cursor: pointer
+			li
+				@extend .pull-left
+				@extend .fullwidth
+				padding: 5px 0px
+				margin: 0px
+				span
+					@extend .pull-left
+					padding-left: 30px
+					padding-top: 10px
+				.arrow-down-big
+					margin-top: 15px
+			&:after
+				content: ""
+				display: block
+				clear: both
+				height: 0		
+		.heart
+			padding-bottom: 10px
+			.heart-desc
+				@extend .pull-left
+				padding-left: 10px
+				font-size: 17px
+				padding-top: 3px
+				@include calc("width", "100% - 60px")
+		.fundslink
+			width: 150px
+		.help-description
+			display: none
+		.stories-about
+			margin-bottom: 10px
+
+.all-socials
+	margin: 10px 0px
+
+.helpwomen
+	@extend .absolute-left
+	@extend .imagepart
+	@include background-position(102px, 175px, 0px, -251px)

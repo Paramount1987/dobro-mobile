@@ -1,0 +1,71 @@
+@import "mixins"
+@import "constants"
+@import "common"
+
+
+.footer
+  @extend .pull-left
+  padding: 5px 10px
+  background-color: #ffffff
+  @include calc('width', '100% - 20px')
+  .copyright
+    color: #949494
+    font-size: 14px
+    @extend .pull-left
+    padding-top: 5px
+  h4
+    padding-top: 20px
+    font-size: 16px
+    text-align: center
+    margin-bottom: 12px
+  .links
+    @extend .pull-left
+    width: 100%
+    padding-top: 15px
+    a
+      color: #2285d5
+      text-decoration: none
+      font-size: 14px
+    ul
+      padding: 10px 0px
+      margin: 0px
+      list-style: none
+      li
+        @extend .pull-left
+        padding: 0px 8px
+        margin: 0px
+        border-right: 1px solid #2285d5
+        &:first-child
+          padding-left: 0px
+        &:last-child
+          border-right: none
+.socials
+  @extend .pull-left
+  text-align: center
+  width: 100%
+  ul
+    list-style: none
+    padding: 0px 0px 10px 0px
+    margin: 0px auto
+    width: 285px
+    li
+      @extend .pull-left
+      height: 40px
+      padding: 0px 10px
+      &:first-child
+        padding-left: 0px
+      &:last-child
+        padding-right: 0px
+      a
+        @extend .pull-left
+        @extend .socials-links
+        &.mailru
+          @include background-position(41px, 41px, -4px, -6px)
+        &.odn
+          @include background-position(41px, 41px, -58px, -6px)
+        &.vk
+          @include background-position(41px, 41px, -111px, -6px)
+        &.facebook
+          @include background-position(41px, 41px, -165px, -6px)
+        &.twitter
+          @include background-position(41px, 41px, -218px, -6px)

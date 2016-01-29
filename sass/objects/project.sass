@@ -1,0 +1,442 @@
+@import "mixins"
+@import "constants"
+@import "common"
+
+.project
+	background-color: #ffffff
+	padding: 10px
+	@include calc("width", "100% - 20px")
+	&.history
+		padding-top: 15px
+		padding-bottom: 15px
+		border-bottom: 1px solid #cdd4d8
+		.info-title
+			font-size: 18px
+			padding: 0px
+		.projectname
+			clear: both
+			padding-top: 10px
+		.footer
+			@extend .pull-left
+			width: 100%
+			clear: both
+			&.wider
+				@include calc('width', "50% - 20px")
+		.socials-left
+			@extend .pull-right
+			@extend .center
+			width: 100%
+			clear: both
+			&.wider
+				width: 50%
+	.content-info
+		.stars
+			@extend .absolute-left
+			@extend .imagepart
+			right: 0px
+			margin-top: -10px
+			margin-right: 10px
+			@include background-position(60px, 55px, -116px, -357px)
+	.thanks
+		padding: 10px
+		text-align: center
+		@include border-radius-equals(10px)
+		@extend .pull-left
+		@include calc("width", "100% - 20px")
+		background-color: #cfe7f7
+		h4
+			float: none !important
+			padding: 0px
+			margin: 0px
+			font-size: 25px !important
+			font-weight: bold
+			color: #2280cf
+			.thanks-bird
+				@extend .absolute-left
+				@extend .imagepart
+				@include background-position(48px, 48px, -166px, -128px)
+				@include calc('margin-left', "50% - 130px")
+				margin-top: -25px
+
+	.split
+		@extend .pull-left
+		width: 100%
+		padding: 5px 0px
+		@include border-radius-equals(5px)
+		background-color: #ffffff
+		&.grey
+			background-color: #f5f7f7
+			.social-block
+				@extend .pull-left
+				@include calc("width", "100% - 20px")
+				padding: 20px 10px
+				border-bottom: 1px solid #c2c4c6
+			.linkbutton
+				text-align: left
+				@extend .pull-left
+				width: 100%
+				padding: 10px 10px 5px 10px
+			.btn
+				@include calc("width", "100% - 15px")
+				text-align: left !important
+				padding: 0px !important
+				@extend .pull-left
+				color: #228fdf
+				text-decoration: none
+
+	.projectname
+		color: #808080
+		font-size: 12px
+		clear: both
+	.i-want-deader
+		color: #333333
+		font-size: 20px
+		clear: both
+		width: 100%
+		padding-top: 0px
+	&.blue
+		background-color: #e4f6f9
+		border-top: 1px solid #cdd4d8
+		.split
+			@extend .pull-left
+			width: 100%
+			@include border-radius-equals(5px)
+			@include box-shadow('', 3px, 3px, 0px, 0px, 193, 209, 200, 1)
+			background-color: #ffffff
+			height: 80px
+			a
+				@extend .pull-left
+				@include calc('width', "100% - 10px")
+				height: 25px
+				text-align: left
+				padding: 10px 0px 7px 10px
+				text-decoration: none
+				color: #000000
+				font-size: 18px
+				&:first-child
+					border-bottom: 1px solid #cdd4d8
+	h3
+		padding: 0px 0px 15px 0px
+		margin: 0px
+	.people
+		@extend .pull-left
+		width: 100%
+		padding-bottom: 10px
+		ul
+			list-style: none
+			padding: 0px
+			margin: 0px
+			li
+				@extend .pull-left
+				width: 100%
+				clear: both
+				&.wider
+					width: 50%
+				padding: 5px 0px
+				.avatar
+					@extend .pull-left
+					width: 40px
+					height: 40px
+					@include border-radius-equals(5px)
+					background-color: #e6e6e6
+					overflow: hidden
+				span
+					@extend .pull-left
+					padding-left: 10px
+					color: #228fdf
+					font-size: 18px
+					padding-top: 10px
+	a
+		&.btn-ready
+			text-align: left
+			padding-left: 10px
+			@include calc("width", "100% - 10px")
+			margin-top: 15px
+	&.grey
+		background-color: #f5f7f7
+		border-top: 1px solid #cdd4d8
+		&.last
+			border-bottom: none
+		&.first
+			border-top: none !important
+		.payment-info
+			@extend .pull-left
+			padding: 5px 0px
+			margin: 0px
+			list-style: none
+			font-size: 16px
+			width: 100%
+			&.first
+				padding-left: 0px
+				width: 100%
+				&.wider
+					padding-left: 117px
+					width: 80%
+			li
+				padding: 10px 0px 0px
+				margin: 0px
+				@extend .pull-left
+				i
+					@extend .pull-left
+					@extend .imagepart
+					&.pouch
+						@include background-position(28px, 24px, -26px, -98px)
+					&.hand
+						@include background-position(28px, 24px, -51px, -97px)
+					&.arrow
+						@include background-position(16px, 16px, -86px, -101px)
+						margin-left: 5px
+						margin-top: 3px
+						&.active
+							@include background-position(16px, 16px, -188px, -101px)
+				.description
+					@extend .pull-left
+					@include calc('width', '100% - 33px')
+					padding-left: 5px
+					.hand-description
+						span
+							@extend .pull-left
+					.help-description-project
+						margin-left: -5px
+						padding-left: 5px
+						@extend .pull-left
+						width: 100%
+						ul
+							padding-left: 18px
+							list-style: disc
+							font-size: 16px
+					.pouch-chart
+						@extend .pull-left
+						margin-top: 15px
+						width: 100%
+						background-color: #d8d8d8
+						height: 5px
+						@include border-radius(3px, 3px, 3px, 3px)
+						.pouch-filled
+							@extend .pull-left
+							width: 90%
+							height: 5px
+							@include border-radius(3px, 3px, 3px, 3px)
+							background-color: #ff801e
+					.pouch-left
+						span
+							@extend .pull-left
+							clear: both
+							padding-top: 5px
+	.base
+		@extend .pull-left
+		width: 100%
+		.imageinfo
+			@extend .pull-left
+			width: 80px
+			height: 80px
+			overflow: hidden
+			@include border-radius-equals(10px)
+		.info
+			@extend .pull-left
+			padding-left: 10px
+			font-size: 12px
+			@include calc('width', "100% - 90px")
+			span
+				@extend .pull-left
+				padding: 3px 10px 2px 0px
+				color: #666666
+			.danger
+				background-color: #fac400
+				@include border-radius(10px, 10px, 10px, 10px)
+				padding: 3px 10px
+				color: #333333
+			.days
+				color: #ff801e
+			a.fund
+				@extend .pull-left
+				text-decoration: none
+				color: #2280cf
+				font-size: 12px
+			.infoline
+				@extend .pull-left
+				width: 100%
+				clear: both
+				padding-bottom: 4px
+	h4
+		font-size: 22px
+		font-weight: bold
+		padding-top: 15px
+		margin-top: 0px
+		margin-bottom: 10px
+		@extend .pull-left
+	.socials-title
+		font-size: 16px
+		text-align: left !important
+		&.wider
+			text-align: left !important
+			float: left
+			position: absolute
+			width: 200px
+	&.details
+		h2
+			padding: 0px
+			margin: 0px
+		.anonym
+			@extend .pull-left
+			@include calc('width', "100% - 20px")
+			padding: 15px 10px
+			background-color: #f5f7f7
+			@include border-radius-equals(10px)
+			@include box-shadow('', 3px, 3px, 0px, 0px, 215, 215, 215, 1)
+			input[type="checkbox"]
+				@extend .pull-left
+				width: 25px
+				height: 25px
+				margin-right: 10px
+				margin-top: -3px
+				@include border-radius-equals(5px)
+			span
+				margin-top: 7px
+				font-size: 16px
+				font-weight: bold
+				max-width: 300px
+				min-width: 150px
+		h4
+			font-size: 16px
+			clear: both
+		.business-check
+			@extend .pull-left
+			width: 100%
+			padding: 0px 0px 15px 0px
+			margin: 0px
+			list-style: none
+			li
+				@extend .pull-left
+				padding: 0px 0px 10px 0px
+				margin: 5px 0px 0px 0px
+				width: 100%
+				&.wider
+					width: 50%
+				input[type="checkbox"]
+					@extend .pull-left
+					width: 25px
+					height: 25px
+					margin-right: 10px
+					margin-top: -3px
+					@include border-radius-equals(5px)
+				span
+					margin-top: 7px
+					font-size: 16px
+					max-width: 300px
+					min-width: 150px
+		.money-check
+			@extend .pull-left
+			width: 100%
+			padding: 0px 0px 15px 0px
+			margin: 0px
+			list-style: none
+			li
+				@extend .pull-left
+				padding: 0px
+				margin: 0px
+				width: 50%
+				&.wider
+					width: 33%
+				input[type="checkbox"]
+					@extend .pull-left
+					width: 25px
+					height: 25px
+					@include border-radius-equals(5px)
+				span
+					margin-top: 7px
+					padding-left: 10px
+					@extend .pull-left
+					font-size: 16px
+		.custom-money-value
+			@extend .pull-left
+			@include calc('width', "100% - 20px")
+			@include border-radius-equals(5px)
+			height: 20px
+			font-size: 16px
+			padding: 10px
+			border: 1px solid #c2c4c6
+
+.slider-project
+	@extend .pull-left
+	width: 100%
+	height: 250px
+	background-color: #ffffff !important
+	padding-bottom: 0px
+	margin-bottom: 0px
+	.images-list
+		overflow: hidden
+		background-color: #ffe5c7
+		height: 210px
+		padding: 10px
+		.items
+			@extend .pull-left
+			width: 100%
+			height: 100%
+			.image-item
+				@extend .absolute-left
+				width: 270px
+				height: 210px
+				padding-right: 10px
+				background-color: #f4f4f4
+	.counter
+		text-align: center
+		@include center-block(0px, 0px)
+		width: 0px
+		i.item
+			@include border-radius-equals(50%)
+			height: 9px
+			width: 9px
+			background-color: #e2e5e8
+			@extend .pull-left
+			margin: 5px
+			&.active
+				background-color: #228fdf
+
+.projects-menu
+	background-color: #ffffff
+	@extend .pull-left
+	width: 100%
+	border-bottom: 1px solid #ccd3d7
+	h3
+		padding: 10px 10px 10px 10px
+		margin: 0px
+		font-size: 21px
+		@extend .pull-left
+
+.project a.btn-ready-c
+	margin-top: 0
+	margin-bottom: 15px
+
+.news-item-text
+	font-size: 14px
+
+.content-news .btn-more
+	font-size: 15px
+	font-weight: normal
+	display: inline-block
+	margin: 10px 0
+
+.link-title
+	display: block
+	clear: both
+	font-size: 12px
+	padding-top: 5px
+	padding-left: 38px
+
+.newsimage
+	width: 80px
+	height: 80px
+	overflow: hidden
+	float: left
+	border-radius: 6px
+	background-color: #E6E6E6
+
+
+
+.days-over
+	border: 1px solid #ff801e
+	border-radius: 10px
+	padding: 3px 8px 2px 8px !important
+	margin-left: -7px
+	display: block
