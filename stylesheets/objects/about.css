@@ -337,7 +337,7 @@ a {
 
 /* line 263, ../../sass/objects/common.scss */
 .bluebg {
-  background-color: #e4f6f9 !important;
+  background-color: #daf4fe !important;
 }
 
 /* line 267, ../../sass/objects/common.scss */
@@ -785,4 +785,9 @@ i.animals.empty {
 /* line 50, ../../sass/objects/about.sass */
 .content .footer.about .aboutlinks {
   padding-top: 25px;
+}
+
+/* line 53, ../../sass/objects/about.sass */
+.about.needhelp {
+  background-color: #daf4fe;
 }
