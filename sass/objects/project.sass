@@ -29,6 +29,8 @@
 			clear: both
 			&.wider
 				width: 50%
+		.back-arrow
+			top: 15px
 	.content-info
 		.stars
 			@extend .absolute-left
@@ -43,20 +45,21 @@
 		@include border-radius-equals(10px)
 		@extend .pull-left
 		@include calc("width", "100% - 20px")
-		background-color: #daf4fe
 		h4
 			float: none !important
 			padding: 0px
 			margin: 0px
 			font-size: 25px !important
 			font-weight: bold
-			color: #2280cf
-			.thanks-bird
-				@extend .absolute-left
-				@extend .imagepart
-				@include background-position(48px, 48px, -166px, -128px)
-				@include calc('margin-left', "50% - 130px")
-				margin-top: -25px
+			color: #228DDD
+
+.thanks-bird
+	@extend .absolute-left
+	@extend .imagepart
+	@include background-position(48px, 48px, -166px, -128px)
+	position: relative
+	margin: 0 auto
+	float: none !important
 
 	.split
 		@extend .pull-left
@@ -207,7 +210,7 @@
 							font-size: 16px
 					.pouch-chart
 						@extend .pull-left
-						margin-top: 15px
+						margin-top: 10px
 						width: 100%
 						background-color: #d8d8d8
 						height: 5px
@@ -325,29 +328,6 @@
 					font-size: 16px
 					max-width: 300px
 					min-width: 150px
-		.money-check
-			@extend .pull-left
-			width: 100%
-			padding: 0px 0px 15px 0px
-			margin: 0px
-			list-style: none
-			li
-				@extend .pull-left
-				padding: 0px
-				margin: 0px
-				width: 50%
-				&.wider
-					width: 33%
-				input[type="checkbox"]
-					@extend .pull-left
-					width: 25px
-					height: 25px
-					@include border-radius-equals(5px)
-				span
-					margin-top: 7px
-					padding-left: 10px
-					@extend .pull-left
-					font-size: 16px
 		.custom-money-value
 			@extend .pull-left
 			@include calc('width', "100% - 20px")
@@ -440,3 +420,388 @@
 	padding: 3px 8px 2px 8px !important
 	margin-left: -7px
 	display: block
+
+/////////////////////////////////////checbox money
+
+.checkbox-default input[type="checkbox"] + i,
+.checkbox-default input[type="radio"] + i
+	display: block
+	width: 35px
+	height: 34px
+	background: url(../images/check-switch.png) 0 0
+	position: absolute
+	top: -6px
+	left: 0
+
+.checkbox-default input[type="checkbox"]:checked + i,
+.checkbox-default input[type="radio"]:checked + i
+	background-position: -36px 0
+
+
+.checkbox-default
+	position: relative
+	padding: 0 0 0 45px
+	display: inline-block
+	zoom: 1
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+.checkbox-default input[type="checkbox"],
+.checkbox-default input[type="radio"]
+	visibility: hidden
+	position: absolute
+	top: 3px
+	left: 3px
+	width: 0
+	height: 0
+	border: none
+	background: none
+	overflow: hidden
+
+.money-check 
+	padding: 0
+	margin: 4px 0
+
+.money-check li
+	display: inline-block
+	vertical-align: top
+	width: 145px
+	padding: 10px 0 20px 0
+	font-size: 18px
+
+@media (min-width: 600px)
+	.money-check li
+		width: 190px
+
+.money-check-wrap .textInput
+	width: 200px
+	margin: 5px 5px 0 0
+	font-size: 18px
+	padding: 9px 15px
+	border: 1px solid #d1d3d4
+	border-radius: 4px
+	-webkit-box-shadow: inset #d1d3d4 0px 3px 6px -1px
+	box-shadow: inset #d1d3d4 0px 3px 6px -1px
+	outline: 0
+
+.money-check-wrap .desired-sum
+	margin: 0 0 4px 0
+	font-size: 19px
+
+.money-details-help
+	padding: 0 10px 15px 10px
+	text-align: center
+	.inner
+		background: #f1f1f1
+		border: 1px solid #ccc
+		border-radius: 10px
+		padding: 12px 12px 18px 12px
+
+.money-details-help .money-check 
+	text-align: left
+	li
+		display: block
+		width: 100%
+		color: #2388DA
+		font-size: 16px
+		font-weight: bold
+
+@media (min-width: 600px)
+.money-details-help .money-check 
+	li
+		display: inline-block
+		vertical-align: top
+		width: 220px
+
+.text-regular-help
+	display: none
+	margin: 4px 0 15px 0
+	line-height: 20px
+////////////////////////////////////////////help-inline-pay
+.help-inline-pay
+	padding: 0 10px
+	font-size: 14px
+	line-height: 20px 
+	color: #888
+	a
+		color: #888
+		text-decoration: underline
+
+////////////////////////////////////////////donate wrap
+.donate-wrap
+	padding: 10px
+
+.donate-inner
+	background: #f1f1f1
+	border: 1px solid #ccc
+	border-radius: 8px
+	text-align: center
+	font-size: 0
+	.title
+		margin: 14px 0
+		color: #228DDD
+		font-size: 20px
+		font-weight: bold
+	.text	
+		font-size: 14px
+		color: #666
+		margin: 0 0	20px 0
+
+.donate-amount
+	padding: 0 10px
+	margin: 10px 0
+	b
+		font-size: 18px
+
+.donate-mobile,
+.donate-e-money
+	border-top: 1px solid #ccc
+
+@media (min-width: 767px)
+	.donate-mobile,
+	.donate-e-money
+		display: inline-block
+		vertical-align: top
+		width: 49%
+	.donate-mobile
+		border-right: 1px solid #ccc		
+
+.list-square
+	padding: 0 10px
+	margin: 10px 0
+	list-style: none
+	font-size: 0
+	li
+		display: inline-block
+		width: 48%
+		vertical-align: top
+		.text
+			font-size: 12px
+			color: #666
+			margin: 10px 0
+
+
+.list-square li:first-child
+	border-right: 1px solid #ccc
+	border-bottom: 1px solid #ccc
+
+.list-square li:nth-child(2)
+	border-bottom: 1px solid #ccc
+
+.list-square li:last-child
+	border-left: 1px solid #ccc
+
+.icon-donate
+	display: inline-block
+	width: 115px
+	height: 45px
+	background: url("../images/dobromobilpay.png") no-repeat
+	background-size: 480px 173px
+	background-position: 0 0
+
+.icon-beeline
+	background-position: -3px 5px
+
+.icon-megafon
+	background-position: -123px 5px
+
+.icon-tele2
+	margin-top: 8px
+	background-position: -242px 2px
+
+.icon-mts
+	margin-top: 8px
+	background-position: -364px 1px
+
+.icon-visa
+	background-position: -3px -44px
+
+.icon-webmoney
+	background-position: -123px -44px
+
+.icon-yandex
+	background-position: -242px -41px
+
+.icon-paypal
+	margin-top: 5px
+	height: 40px
+	background-position: -362px -44px
+
+.donate-info
+	margin: 15px 0
+	padding: 0 10px
+	.inner
+		background: #f1f1f1
+		border-radius: 8px
+		padding: 5px 0
+		.comment
+			color: #666
+			font-size: 14px
+			margin: 0
+
+.mobile-operator-wrap
+	padding: 0 10px
+	.icon-wrap
+		padding: 0 0 10px 0
+		text-align: center
+		.icon-donate
+			-webkit-transform: scale(1.4)
+			transform: scale(1.4)
+	.text
+		margin: 5px 0		
+	.phone-wrap	
+		.phone-sub
+			position: absolute
+			top: 0
+			left: 0
+			display: inline-block
+			border-right: 1px solid #ccc	
+			padding: 0 7px
+			font-size: 22px
+			line-height: 45px
+		.text
+			font-weight: bold
+			font-size: 19px	
+			margin-bottom: 10px
+			width: 300px
+
+.e-money-wrap
+	padding: 0 10px
+	.icon-wrap
+		padding: 0 0 10px 0
+		text-align: center
+
+@media (min-width: 767px)
+	.e-money-wrap
+		text-align: center
+		.text
+			text-align: left
+			width: 490px
+			display: inline-block
+
+.phone-input
+	position: relative
+	border: 1px solid #ccc
+	border-radius: 6px
+	margin: 0 0 20px 0
+	padding: 0 0 0 40px
+	background: #f1f1f1
+	height: 45px
+	overflow: hidden
+	input
+		border: 0
+		outline: 0
+		height: 45px
+		display: block
+		width: 100%
+		background: #fff
+		font-size: 22px
+		line-height: 45px
+		padding: 0 10px 0 20px
+		@include box-sizing(border-box)
+
+@media (min-width: 767px)
+	.mobile-operator-wrap
+		text-align: center
+		.phone-wrap,
+		.icon-wrap
+			display: inline-block
+			vertical-align: top
+			text-align: left
+		.text
+			text-align: left
+			width: 490px
+			display: inline-block
+		.phone-wrap
+			width: 300px	
+		.icon-wrap
+			position: relative
+			width: 200px	
+			height: 90px
+			.icon-donate
+				position: absolute
+				top: 50%
+				left: 0
+				-webkit-transform: scale(1.4) translate(0,-50%)
+				transform: scale(1.4) translate(0,-50%)
+	.donate-info
+		margin: 20px auto
+		width: 580px
+		.inner
+			@include clearfix()	
+		.donate-amount
+			width: 240px
+		.donate-amount:first-child
+			float: left	
+		.donate-amount:last-child
+			float: right	
+////////////////////////////////////////anonym
+.anonym
+	position: relative
+	padding: 10px 14px 10px 50px
+	background: #f1f1f1
+	border: 1px solid #ccc
+	border-radius: 8px
+	line-height: 20px
+	input
+		position: absolute
+		z-index: 10
+		top: 10px
+		left: 10px
+		width: 25px
+		height: 25px
+
+.title-blue
+	margin: 10px 0
+	color: #228DDD
+
+.split
+	a
+		font-size: 18px
+		text-decoration: underline
+
+@media (min-width: 767px)
+	.anonym
+		width: 440px
+		margin: 0 auto
+		padding: 10px 50px 10px 90px
+		input
+			left: 50px
+	.thanks-text
+		width: 580px
+		margin: 10px auto		
+	.socials-thanks
+		@include clearfix()
+		.left-bl
+			width: 295px
+			padding-left: 90px
+			float: left
+			text-align: left !important
+		.right-bl
+			width: 215px
+			padding-right: 90px
+			padding-top: 55px
+			float: right	
+
+.donate-error
+	padding: 0 10px
+	text-align: center
+	h4
+		font-size: 26px
+		margin: 15px 0
+	.text
+		font-size: 14px
+		line-height: 18px
+		color: #666	
+
+@media (min-width: 767px)
+	.donate-error
+		width: 500px
+		margin: 0 auto
+
+////choice-card
+.choice-card
+	padding: 0 10px

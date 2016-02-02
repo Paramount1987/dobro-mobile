@@ -44,6 +44,7 @@
 }
 
 .content {
+	position: relative;
 	overflow: hidden;
 	float: left;
 	width: 100%;
@@ -193,6 +194,41 @@ a {
 	@include border-radius(5px, 5px, 5px, 5px);
 }
 
+.btn-pic-sm{
+	display: inline-block;
+	width: 177px;
+	height: 56px;
+	text-align: center;
+	line-height: 55px;
+	font-size: 18px;
+	color: #fff;
+	background: url("../images/dobromobilpay.png") no-repeat;
+	background-size: 480px 173px;
+	background-position: -7px -100px;
+}
+
+.btn-pic-sm.btn-center{
+	display: block;
+	margin: 0 auto;
+}
+
+.btn-pic-lg{
+	display: inline-block;
+	width: 252px;
+	height: 58px;
+	text-align: center;
+	line-height: 55px;
+	font-size: 18px;
+	color: #fff;
+	background: url("../images/dobromobilpay.png") no-repeat;
+	background-size: 480px 173px;
+	background-position: -188px -100px;
+}
+
+.btn-pic-lg.btn-center{
+	display: block;
+	margin: 0 auto;
+}
 
 .arrow-more-grey {
 	@extend .pull-right;
@@ -300,6 +336,10 @@ a {
 }
 
 .back-arrow {
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	z-index: 10;
 	@extend .pull-left;
 	@extend .imagepart;
 	@include background-position(15px, 15px, -61px, -206px);
@@ -309,11 +349,11 @@ a {
 
 .history-title {
 	@extend .pull-left;
-	padding-left: 17px !important;
+	padding-left: 27px !important;
 	padding-top: 0px !important;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
-	max-width: 260px;
+	max-width: 700px;
 }
 
 i.adult {
@@ -383,8 +423,7 @@ i.animals.empty {
 }
 
 .tabs li:last-child {
-	height: 19px;
-	@include box-shadow('', 2px, 3px, 0px, 0px, 215, 215, 215, 1);
+	height: 20px;
 	@include border-radius(0px, 5px, 0px, 5px)
 }
 
@@ -548,3 +587,31 @@ h4 {
 	background-color: #147fcb;
 }
 
+.clearfix{
+	@include clearfix();
+}
+
+.title-lg{
+	font-size: 18px !important;
+}
+
+.title-purse{
+	position: relative;
+	padding: 0 0 0 40px;
+	margin: 0 !important;
+	color: #0088CF !important;
+	font-size: 18px !important; 
+	line-height: 25px;
+}
+
+.title-purse:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: 27px;
+	background: url("../images/dobromobilpay.png") no-repeat;
+	background-size: 480px 173px;
+	background-position: -448px -99px;
+}

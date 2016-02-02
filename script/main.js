@@ -48,6 +48,8 @@ $(document).ready(function(){
 	setRequest();
 //	how can i help
 	helpToggleListener();
+// money check
+	radioCheckbox();
 //slow scroll
  $(".scroll").click(function(event){     
         event.preventDefault();
@@ -300,3 +302,14 @@ function helpToggleListener(){
 	});
 }
 
+function radioCheckbox(){
+	$(".money-check-radio li label").click(function(){
+
+		if( $(this).hasClass("checkbox-once") ){
+			$(".text-regular-help").slideUp();
+		}else{
+			$(".text-regular-help").slideDown();
+		}
+
+	});
+}

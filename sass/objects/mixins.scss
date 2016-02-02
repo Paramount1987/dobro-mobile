@@ -66,3 +66,27 @@ $large: 768px;
 		box-shadow: inset #{$distance} #{$angle} #{$blur} #{$spread} rgba($red, $green, $blue, $opacity);
 	}
 }
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+      -ms-transform: translate($x, $y); // IE9 only
+       -o-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
