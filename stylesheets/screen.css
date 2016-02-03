@@ -898,9 +898,12 @@ i.animals.empty {
   padding-left: 10px;
   font-size: 16px;
   color: #333333;
+  width: 125px;
+  height: 71px;
+  overflow: hidden;
 }
 
-/* line 42, ../sass/objects/slider.sass */
+/* line 45, ../sass/objects/slider.sass */
 .slidercount {
   background-color: #ffffff;
   -webkit-border-top-left-radius: 5px;
@@ -919,7 +922,7 @@ i.animals.empty {
   width: 50%;
   height: 5px;
 }
-/* line 48, ../sass/objects/slider.sass */
+/* line 51, ../sass/objects/slider.sass */
 .slidercount .sliderposition {
   background-color: #228ede;
   width: 30%;
@@ -4356,6 +4359,7 @@ body {
   padding: 15px 9px 15px 15px;
   margin: 0px;
   font-size: 16px;
+  outline: 0;
   -webkit-border-top-left-radius: 5px;
   -moz-border-radius-topleft: 5px;
   border-top-left-radius: 5px;
@@ -4373,7 +4377,7 @@ body {
   width: calc(100% - 108px);
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .searchbar .form-field.button {
   height: 32px;
   border-bottom: 1px solid #f6921e;
@@ -4400,18 +4404,18 @@ body {
   text-decoration: none;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .orange {
   color: #ff801e;
   font-weight: bold;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .blue {
   color: #228ede;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .title-mail {
   background-color: #fff;
   text-align: center;
@@ -4422,12 +4426,12 @@ body {
   z-index: 2;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .title-mail .orange {
   font-weight: bold;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .arc {
   background-color: #fff;
   width: -webkit-calc(100% + 100px);
@@ -4451,7 +4455,7 @@ body {
   z-index: 0;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .arc.bottom {
   background-color: #daf4fe;
   height: 120px;
@@ -4459,17 +4463,17 @@ body {
   margin-left: -50px;
 }
 
-/* line 151, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .arc.bottom.project {
   background-color: #daf4fe;
 }
 
-/* line 155, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 h4 {
   font-size: 20px;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .content.slider {
   background-color: #daf4fe;
   padding-bottom: 10px;

@@ -894,9 +894,12 @@ i.animals.empty {
   padding-left: 10px;
   font-size: 16px;
   color: #333333;
+  width: 125px;
+  height: 71px;
+  overflow: hidden;
 }
 
-/* line 42, ../../sass/objects/slider.sass */
+/* line 45, ../../sass/objects/slider.sass */
 .slidercount {
   background-color: #ffffff;
   -webkit-border-top-left-radius: 5px;
@@ -915,7 +918,7 @@ i.animals.empty {
   width: 50%;
   height: 5px;
 }
-/* line 48, ../../sass/objects/slider.sass */
+/* line 51, ../../sass/objects/slider.sass */
 .slidercount .sliderposition {
   background-color: #228ede;
   width: 30%;
