@@ -493,6 +493,16 @@ i.animals.empty {
 	@include calc("width", "100% - 20px");
 	padding: 10px !important;
 }
+.woutpadding .text{
+	font-size: 14px;
+}
+.woutpadding .days-over{
+	width: 155px;
+	margin: 10px 0 0 0;
+	font-size: 12px;
+	color: #FF801E;
+	text-align: center;
+}
 
 .widthpadding {
 	padding: 0px 10px;

@@ -92,7 +92,7 @@ function initHistorySubmenu() {
 function initSearchBar() {
 	$('.icon.search').click(function(){
 		if ($('.subblock').css('display') == 'block') {
-			$(".subblock").animate({width:'toggle'},350);
+			$(".subblock").toggle();
 		}
 		$('.searchblock').slideToggle();
 	})
@@ -103,7 +103,7 @@ function initMenu() {
 		if ($('.searchblock').css('display') == 'block') {
 			$('.searchblock').slideToggle();
 		}
-		$(".subblock").animate({width:'toggle'},350);
+		$(".subblock").toggle();
 	});
 	$('.collapsible').click(function(event){
 		var parent = $(this).parent().parent(),
