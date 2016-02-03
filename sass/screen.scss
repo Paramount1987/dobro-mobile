@@ -111,6 +111,7 @@ body {
 
 .orange {
 	color: $font-color-orange;
+	font-weight: bold;
 }
 
 .blue {
@@ -124,6 +125,9 @@ body {
 	padding: 0px 10px;
 	@include calc('width', "100% - 20px");
 	z-index: 2;
+}
+.title-mail .orange{
+	font-weight: bold;
 }
 
 .arc {

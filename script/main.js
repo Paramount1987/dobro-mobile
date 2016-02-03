@@ -129,7 +129,7 @@ function initHelpDescription() {
 	$('.hand-description').click(function(){
 		var me = this,
 			target = $('.arrow', $(this));
-		$('.help-description', $(this).parent()).slideToggle('slow', function(){
+		$('.help-description', $(this).parent()).slideToggle('fast', function(){
 			if (target.hasClass('active')) {
 				target.removeClass('active');
 			} else {
@@ -297,7 +297,7 @@ function setRequest() {
 function helpToggleListener(){
 	$('.help-about').click(function(){
 		var parent = $(this).parent();
-		parent.find('.help-description').slideToggle(350);
+		parent.find('.help-description').slideToggle(150);
 		if (parent.find('.arrow-down-big').hasClass('up')) {
 			parent.find('.arrow-down-big').removeClass('up');
 		} else {

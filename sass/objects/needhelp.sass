@@ -68,6 +68,7 @@
 				padding: 0px 3px
 			.days
 				color: #ff801e
+				font-weight: bold
 	h4,.h4
 		font-size: 21px
 		margin: 5px 0px 0px 0px
@@ -157,6 +158,8 @@
 						padding-left: 15px
 						list-style: disc
 						font-size: 16px
+						li
+							padding: 5px 0
 				.pouch-chart
 					@extend .pull-left
 					margin-top: 10px
@@ -316,3 +319,6 @@
 
 .woutpadding .item-info
 	padding: 10px
+
+.content-info.woutpadding .item-info .item-description
+	@include calc('width', '100% - 137px')

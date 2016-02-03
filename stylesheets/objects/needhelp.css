@@ -947,8 +947,9 @@ i.animals.empty {
 /* line 69, ../../sass/objects/needhelp.sass */
 .content-info .cityinfo .time .days {
   color: #ff801e;
+  font-weight: bold;
 }
-/* line 71, ../../sass/objects/needhelp.sass */
+/* line 72, ../../sass/objects/needhelp.sass */
 .content-info h4, .content-info .h4 {
   font-size: 21px;
   margin: 5px 0px 0px 0px;
@@ -957,17 +958,17 @@ i.animals.empty {
   text-align: left;
   color: #333;
 }
-/* line 79, ../../sass/objects/needhelp.sass */
+/* line 80, ../../sass/objects/needhelp.sass */
 .content-info .h4:hover {
   color: #0080d0;
 }
-/* line 81, ../../sass/objects/needhelp.sass */
+/* line 82, ../../sass/objects/needhelp.sass */
 .content-info .item-info {
   width: 100%;
   clear: both;
   padding: 10px 0px;
 }
-/* line 86, ../../sass/objects/needhelp.sass */
+/* line 87, ../../sass/objects/needhelp.sass */
 .content-info .item-info .image-container {
   width: 107px;
   overflow: hidden;
@@ -976,7 +977,7 @@ i.animals.empty {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 92, ../../sass/objects/needhelp.sass */
+/* line 93, ../../sass/objects/needhelp.sass */
 .content-info .item-info .item-description {
   width: -webkit-calc(100% - 117px);
   width: -moz-calc(100% - 117px);
@@ -984,52 +985,52 @@ i.animals.empty {
   padding-left: 10px;
   font-size: 14px;
 }
-/* line 98, ../../sass/objects/needhelp.sass */
+/* line 99, ../../sass/objects/needhelp.sass */
 .content-info .item-info .item-description span.info-desc {
   clear: both;
 }
-/* line 101, ../../sass/objects/needhelp.sass */
+/* line 102, ../../sass/objects/needhelp.sass */
 .content-info .payment-info {
   padding: 5px 0px;
   margin: 0px;
   list-style: none;
   font-size: 16px;
 }
-/* line 108, ../../sass/objects/needhelp.sass */
+/* line 109, ../../sass/objects/needhelp.sass */
 .content-info .payment-info.first {
   padding-left: 0px;
   width: 100%;
 }
-/* line 111, ../../sass/objects/needhelp.sass */
+/* line 112, ../../sass/objects/needhelp.sass */
 .content-info .payment-info.first.wider {
   padding-left: 117px;
   width: 80%;
 }
-/* line 114, ../../sass/objects/needhelp.sass */
+/* line 115, ../../sass/objects/needhelp.sass */
 .content-info .payment-info li {
   padding: 10px 0px;
   margin: 0px;
 }
-/* line 118, ../../sass/objects/needhelp.sass */
+/* line 119, ../../sass/objects/needhelp.sass */
 .content-info .payment-info li .left-a-bit {
   padding-right: 20px;
   font-size: 14px;
   font-weight: bold;
   padding-top: 10px;
 }
-/* line 126, ../../sass/objects/needhelp.sass */
+/* line 127, ../../sass/objects/needhelp.sass */
 .content-info .payment-info li i.pouch {
   width: 28px;
   height: 24px;
   background-position: -26px -98px;
 }
-/* line 128, ../../sass/objects/needhelp.sass */
+/* line 129, ../../sass/objects/needhelp.sass */
 .content-info .payment-info li i.hand {
   width: 28px;
   height: 24px;
   background-position: -51px -97px;
 }
-/* line 130, ../../sass/objects/needhelp.sass */
+/* line 131, ../../sass/objects/needhelp.sass */
 .content-info .payment-info li i.arrow {
   width: 16px;
   height: 16px;
@@ -1037,31 +1038,31 @@ i.animals.empty {
   margin-left: 5px;
   margin-top: 3px;
 }
-/* line 134, ../../sass/objects/needhelp.sass */
+/* line 135, ../../sass/objects/needhelp.sass */
 .content-info .payment-info li i.arrow.active {
   width: 16px;
   height: 16px;
   background-position: -188px -101px;
 }
-/* line 136, ../../sass/objects/needhelp.sass */
+/* line 137, ../../sass/objects/needhelp.sass */
 .content-info .payment-info li .description {
   width: -webkit-calc(100% - 33px);
   width: -moz-calc(100% - 33px);
   width: calc(100% - 33px);
   padding-left: 5px;
 }
-/* line 141, ../../sass/objects/needhelp.sass */
+/* line 142, ../../sass/objects/needhelp.sass */
 .content-info .payment-info li .description .hand-description span {
   border-bottom: 1px dashed #2285d5;
   font-weight: bold;
 }
-/* line 145, ../../sass/objects/needhelp.sass */
+/* line 146, ../../sass/objects/needhelp.sass */
 .content-info .payment-info li .description .hand-description:after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 149, ../../sass/objects/needhelp.sass */
+/* line 150, ../../sass/objects/needhelp.sass */
 .content-info .payment-info li .description .help-description {
   display: none;
   padding-top: 15px;
@@ -1069,13 +1070,17 @@ i.animals.empty {
   padding-left: 5px;
   width: 100%;
 }
-/* line 156, ../../sass/objects/needhelp.sass */
+/* line 157, ../../sass/objects/needhelp.sass */
 .content-info .payment-info li .description .help-description ul {
   padding-left: 15px;
   list-style: disc;
   font-size: 16px;
 }
-/* line 160, ../../sass/objects/needhelp.sass */
+/* line 161, ../../sass/objects/needhelp.sass */
+.content-info .payment-info li .description .help-description ul li {
+  padding: 5px 0;
+}
+/* line 163, ../../sass/objects/needhelp.sass */
 .content-info .payment-info li .description .pouch-chart {
   margin-top: 10px;
   width: -webkit-calc(100% - 20px);
@@ -1096,7 +1101,7 @@ i.animals.empty {
   -moz-border-radius-bottomright: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 167, ../../sass/objects/needhelp.sass */
+/* line 170, ../../sass/objects/needhelp.sass */
 .content-info .payment-info li .description .pouch-chart .pouch-filled {
   width: 90%;
   height: 5px;
@@ -1114,38 +1119,38 @@ i.animals.empty {
   border-bottom-right-radius: 3px;
   background-color: #ff801e;
 }
-/* line 174, ../../sass/objects/needhelp.sass */
+/* line 177, ../../sass/objects/needhelp.sass */
 .content-info.featured h4, .content-info.featured .cityinfo {
   display: block;
 }
-/* line 177, ../../sass/objects/needhelp.sass */
+/* line 180, ../../sass/objects/needhelp.sass */
 .content-info.featured .item-description h4, .content-info.featured .item-description .h4, .content-info.featured .item-description .cityinfo {
   display: none;
 }
-/* line 180, ../../sass/objects/needhelp.sass */
+/* line 183, ../../sass/objects/needhelp.sass */
 .content-info.featured.wider .item-info {
   padding-top: 0px;
 }
-/* line 182, ../../sass/objects/needhelp.sass */
+/* line 185, ../../sass/objects/needhelp.sass */
 .content-info.featured.wider h4, .content-info.featured.wider .h4, .content-info.featured.wider .cityinfo {
   display: none;
 }
-/* line 185, ../../sass/objects/needhelp.sass */
+/* line 188, ../../sass/objects/needhelp.sass */
 .content-info.featured.wider .item-description h4, .content-info.featured.wider .item-description .h4 {
   width: 50%;
   padding-bottom: 10px;
 }
-/* line 188, ../../sass/objects/needhelp.sass */
+/* line 191, ../../sass/objects/needhelp.sass */
 .content-info.featured.wider .item-description .cityinfo {
   margin-top: 0px;
 }
-/* line 190, ../../sass/objects/needhelp.sass */
+/* line 193, ../../sass/objects/needhelp.sass */
 .content-info.featured.wider .item-description h4, .content-info.featured.wider .item-description .h4, .content-info.featured.wider .item-description .cityinfo {
   clear: both;
   display: block;
 }
 
-/* line 198, ../../sass/objects/needhelp.sass */
+/* line 201, ../../sass/objects/needhelp.sass */
 .needhelp.about.wider .content-info:nth-child(odd) {
   width: -webkit-calc(100% - 25px);
   width: -moz-calc(100% - 25px);
@@ -1153,7 +1158,7 @@ i.animals.empty {
   margin-right: 0;
   margin-left: 0px;
 }
-/* line 202, ../../sass/objects/needhelp.sass */
+/* line 205, ../../sass/objects/needhelp.sass */
 .needhelp.about.wider .content-info:nth-child(even) {
   width: -webkit-calc(100% - 25px);
   width: -moz-calc(100% - 25px);
@@ -1162,7 +1167,7 @@ i.animals.empty {
   margin-left: 0;
 }
 
-/* line 209, ../../sass/objects/needhelp.sass */
+/* line 212, ../../sass/objects/needhelp.sass */
 .needhelp:nth-child(2).wider .content-info:nth-child(odd) {
   width: -webkit-calc(100% - 25px);
   width: -moz-calc(100% - 25px);
@@ -1170,7 +1175,7 @@ i.animals.empty {
   margin-right: 0;
   margin-left: 0px;
 }
-/* line 213, ../../sass/objects/needhelp.sass */
+/* line 216, ../../sass/objects/needhelp.sass */
 .needhelp:nth-child(2).wider .content-info:nth-child(even) {
   width: -webkit-calc(100% - 25px);
   width: -moz-calc(100% - 25px);
@@ -1178,7 +1183,7 @@ i.animals.empty {
   margin-right: 0px;
   margin-left: 0;
 }
-/* line 217, ../../sass/objects/needhelp.sass */
+/* line 220, ../../sass/objects/needhelp.sass */
 .needhelp:nth-child(2) .morebtn {
   width: 100%;
   text-align: center;
@@ -1186,7 +1191,7 @@ i.animals.empty {
   padding-bottom: 10px;
   margin-bottom: 5px;
 }
-/* line 224, ../../sass/objects/needhelp.sass */
+/* line 227, ../../sass/objects/needhelp.sass */
 .needhelp:nth-child(2) .morebtn .linksblock {
   width: 300px;
   margin: 0px auto 0px auto;
@@ -1208,11 +1213,11 @@ i.animals.empty {
   border-bottom-right-radius: 4px;
   padding: 10px 0px;
 }
-/* line 231, ../../sass/objects/needhelp.sass */
+/* line 234, ../../sass/objects/needhelp.sass */
 .needhelp:nth-child(2) .morebtn .linksblock .pages {
   margin-left: 14px;
 }
-/* line 233, ../../sass/objects/needhelp.sass */
+/* line 236, ../../sass/objects/needhelp.sass */
 .needhelp:nth-child(2) .morebtn .linksblock .pages a {
   padding: 10px;
   margin: 10px 0px;
@@ -1220,11 +1225,11 @@ i.animals.empty {
   text-decoration: none;
   font-size: 18px;
 }
-/* line 239, ../../sass/objects/needhelp.sass */
+/* line 242, ../../sass/objects/needhelp.sass */
 .needhelp:nth-child(2) .morebtn .linksblock .pages a.active {
   color: #808080;
 }
-/* line 241, ../../sass/objects/needhelp.sass */
+/* line 244, ../../sass/objects/needhelp.sass */
 .needhelp:nth-child(2) .morebtn .linksblock .pages i.nextblue {
   width: 14px;
   height: 14px;
@@ -1233,19 +1238,19 @@ i.animals.empty {
   margin-top: 5px;
 }
 
-/* line 248, ../../sass/objects/needhelp.sass */
+/* line 251, ../../sass/objects/needhelp.sass */
 .select {
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 253, ../../sass/objects/needhelp.sass */
+/* line 256, ../../sass/objects/needhelp.sass */
 .select span {
   width: 20px;
   font-size: 18px;
   padding-top: 7px;
 }
-/* line 258, ../../sass/objects/needhelp.sass */
+/* line 261, ../../sass/objects/needhelp.sass */
 .select select {
   width: -webkit-calc(100% - 20px);
   width: -moz-calc(100% - 20px);
@@ -1268,19 +1273,19 @@ i.animals.empty {
   padding: 5px;
   height: 36px;
 }
-/* line 267, ../../sass/objects/needhelp.sass */
+/* line 270, ../../sass/objects/needhelp.sass */
 .select select.center {
   margin-left: 10px;
 }
 
-/* line 270, ../../sass/objects/needhelp.sass */
+/* line 273, ../../sass/objects/needhelp.sass */
 .helpitems {
   width: 100%;
   list-style: none;
   margin: 0px;
   padding: 0px 0px 0px 0px;
 }
-/* line 276, ../../sass/objects/needhelp.sass */
+/* line 279, ../../sass/objects/needhelp.sass */
 .helpitems li {
   margin: 0px 0px 5px 0px;
   padding: 0px;
@@ -1288,11 +1293,11 @@ i.animals.empty {
   word-wrap: break-word;
   width: 50%;
 }
-/* line 283, ../../sass/objects/needhelp.sass */
+/* line 286, ../../sass/objects/needhelp.sass */
 .helpitems li.wider {
   width: 25%;
 }
-/* line 285, ../../sass/objects/needhelp.sass */
+/* line 288, ../../sass/objects/needhelp.sass */
 .helpitems li a {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #333333;
@@ -1303,7 +1308,7 @@ i.animals.empty {
   width: -moz-calc(100% - 13px);
   width: calc(100% - 13px);
 }
-/* line 293, ../../sass/objects/needhelp.sass */
+/* line 296, ../../sass/objects/needhelp.sass */
 .helpitems li a.active {
   background-color: #daf4fe;
   -webkit-border-top-left-radius: 5px;
@@ -1322,7 +1327,7 @@ i.animals.empty {
   -moz-box-shadow: inset 0px 3px 0px 0px #d7d7d7;
   box-shadow: inset 0px 3px 0px 0px #d7d7d7;
 }
-/* line 297, ../../sass/objects/needhelp.sass */
+/* line 300, ../../sass/objects/needhelp.sass */
 .helpitems li a span {
   padding-top: 5px;
   padding-left: 5px;
@@ -1331,29 +1336,29 @@ i.animals.empty {
   width: calc(100% - 37px);
   text-align: left;
 }
-/* line 303, ../../sass/objects/needhelp.sass */
+/* line 306, ../../sass/objects/needhelp.sass */
 .helpitems li a i {
   margin: 2px;
 }
-/* line 307, ../../sass/objects/needhelp.sass */
+/* line 310, ../../sass/objects/needhelp.sass */
 .helpitems li a i.money {
   width: 25px;
   height: 25px;
   background-position: -108px -65px;
 }
-/* line 309, ../../sass/objects/needhelp.sass */
+/* line 312, ../../sass/objects/needhelp.sass */
 .helpitems li a i.make {
   width: 25px;
   height: 25px;
   background-position: -133px -65px;
 }
-/* line 311, ../../sass/objects/needhelp.sass */
+/* line 314, ../../sass/objects/needhelp.sass */
 .helpitems li a i.by-card {
   width: 25px;
   height: 25px;
   background-position: -159px -65px;
 }
-/* line 313, ../../sass/objects/needhelp.sass */
+/* line 316, ../../sass/objects/needhelp.sass */
 .helpitems li a i.donor {
   margin-left: 5px;
   width: 25px;
@@ -1361,7 +1366,14 @@ i.animals.empty {
   background-position: -185px -65px;
 }
 
-/* line 317, ../../sass/objects/needhelp.sass */
+/* line 320, ../../sass/objects/needhelp.sass */
 .woutpadding .item-info {
   padding: 10px;
+}
+
+/* line 323, ../../sass/objects/needhelp.sass */
+.content-info.woutpadding .item-info .item-description {
+  width: -webkit-calc(100% - 137px);
+  width: -moz-calc(100% - 137px);
+  width: calc(100% - 137px);
 }
