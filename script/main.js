@@ -94,14 +94,18 @@ function initSearchBar() {
 		if ($('.subblock').css('display') == 'block') {
 			$(".subblock").toggle();
 		}
-		$('.searchblock').slideToggle();
+		$('.searchblock').toggle();
+
+		if( $('.searchblock').css("display") == "block" ){
+				$('.searchblock').find("input").focus();
+		}
 	})
 }
 
 function initMenu() {
 	$('.icon.burger').click(function(){
 		if ($('.searchblock').css('display') == 'block') {
-			$('.searchblock').slideToggle();
+			$('.searchblock').toggle();
 		}
 		$(".subblock").toggle();
 	});
