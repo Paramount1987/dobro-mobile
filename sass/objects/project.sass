@@ -428,7 +428,9 @@
 	display: block
 	width: 35px
 	height: 34px
-	background: url(../images/check-switch.png) 0 0
+	background: url(../images/check-switch.png) no-repeat
+	background-size: 70px 35px
+	background-position: -1px 0
 	position: absolute
 	top: -6px
 	left: 0
@@ -523,8 +525,8 @@
 ////////////////////////////////////////////help-inline-pay
 .help-inline-pay
 	padding: 0 10px
-	font-size: 14px
-	line-height: 20px 
+	font-size: 13px
+	line-height: 18px 
 	color: #888
 	a
 		color: #888
@@ -737,6 +739,7 @@
 		.donate-amount:first-child
 			float: left	
 		.donate-amount:last-child
+			width: 290px
 			float: right	
 ////////////////////////////////////////anonym
 .anonym
@@ -760,24 +763,24 @@
 
 .split
 	a
-		font-size: 18px
+		font-size: 17px
 		text-decoration: underline
 
 @media (min-width: 767px)
 	.anonym
 		width: 440px
 		margin: 0 auto
-		padding: 10px 50px 10px 90px
+		padding: 10px 50px 10px 50px
 		input
-			left: 50px
+			left: 10px
 	.thanks-text
-		width: 580px
+		width: 550px
 		margin: 10px auto		
 	.socials-thanks
 		@include clearfix()
 		.left-bl
 			width: 295px
-			padding-left: 90px
+			padding-left: 110px
 			float: left
 			text-align: left !important
 		.right-bl

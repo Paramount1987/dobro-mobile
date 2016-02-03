@@ -87,7 +87,7 @@
 	float: left;
 	width: 24px;
 	height: 24px;
-	padding: 13px;
+	padding: 11px 10px 9px 10px;
 	@extend .pointer;
 }
 
@@ -199,8 +199,9 @@ a {
 	width: 177px;
 	height: 56px;
 	text-align: center;
-	line-height: 55px;
+	line-height: 52px;
 	font-size: 18px;
+	font-weight: bold;
 	color: #fff;
 	background: url("../images/dobromobilpay.png") no-repeat;
 	background-size: 480px 173px;
@@ -217,8 +218,9 @@ a {
 	width: 252px;
 	height: 58px;
 	text-align: center;
-	line-height: 55px;
+	line-height: 52px;
 	font-size: 18px;
+	font-weight: bold;
 	color: #fff;
 	background: url("../images/dobromobilpay.png") no-repeat;
 	background-size: 480px 173px;
@@ -593,6 +595,7 @@ h4 {
 
 .title-lg{
 	font-size: 18px !important;
+	margin: 20px 0 0 0;
 }
 
 .title-purse{
@@ -614,4 +617,9 @@ h4 {
 	background: url("../images/dobromobilpay.png") no-repeat;
 	background-size: 480px 173px;
 	background-position: -448px -99px;
+}
+
+.thanks-text{
+	font-size: 16px;
+	line-height: 20px;
 }
