@@ -1280,16 +1280,17 @@ i.animals.empty {
 /* line 290, ../../sass/objects/profile.sass */
 .content-news-header h4 {
   color: #228FDF;
+  padding-top: 0 !important;
 }
 
-/* line 294, ../../sass/objects/profile.sass */
+/* line 295, ../../sass/objects/profile.sass */
 .regular-help-list {
   padding: 10px;
   margin: 0;
   list-style: none;
 }
 
-/* line 299, ../../sass/objects/profile.sass */
+/* line 300, ../../sass/objects/profile.sass */
 .regular-help-item {
   background: #fff;
   border-radius: 10px;
@@ -1298,73 +1299,73 @@ i.animals.empty {
   margin: 5px 0 10px 0;
   padding: 10px;
 }
-/* line 306, ../../sass/objects/profile.sass */
+/* line 307, ../../sass/objects/profile.sass */
 .regular-help-item .btn {
   float: none !important;
   display: block;
 }
-/* line 309, ../../sass/objects/profile.sass */
+/* line 310, ../../sass/objects/profile.sass */
 .regular-help-item .title {
   margin: 5px 0;
   font-size: 21px;
   color: #228FDF;
 }
 
-/* line 314, ../../sass/objects/profile.sass */
+/* line 315, ../../sass/objects/profile.sass */
 .regular-help-header {
   color: #808080;
   border-bottom: 1px solid #ccc;
 }
-/* line 317, ../../sass/objects/profile.sass */
+/* line 318, ../../sass/objects/profile.sass */
 .regular-help-header b {
   color: #000;
 }
 
-/* line 320, ../../sass/objects/profile.sass */
+/* line 321, ../../sass/objects/profile.sass */
 .regular-help-body {
   padding: 14px 0 10px 0;
   border-bottom: 1px solid #ccc;
 }
 
-/* line 324, ../../sass/objects/profile.sass */
+/* line 325, ../../sass/objects/profile.sass */
 .regular-help-footer {
   padding: 14px 0 5px 0;
 }
-/* line 326, ../../sass/objects/profile.sass */
+/* line 327, ../../sass/objects/profile.sass */
 .regular-help-footer .btn {
   margin-top: 25px;
 }
 
-/* line 329, ../../sass/objects/profile.sass */
+/* line 330, ../../sass/objects/profile.sass */
 .regular-help-body-title,
 .regular-help-footer-title {
   color: #808080;
   margin: 2px 0;
 }
 
-/* line 334, ../../sass/objects/profile.sass */
+/* line 335, ../../sass/objects/profile.sass */
 .regular-help-link,
 .regular-footer-link {
   display: block;
   margin: 10px 0;
 }
 
-/* line 339, ../../sass/objects/profile.sass */
+/* line 340, ../../sass/objects/profile.sass */
 .regular-help-date {
   padding: 20px 20px 30px 20px;
   border-bottom: 1px solid #ccc;
 }
-/* line 342, ../../sass/objects/profile.sass */
+/* line 343, ../../sass/objects/profile.sass */
 .regular-help-date .title {
   margin: 5px 0;
 }
-/* line 344, ../../sass/objects/profile.sass */
+/* line 345, ../../sass/objects/profile.sass */
 .regular-help-date .btn {
   display: block;
   float: none !important;
 }
 
-/* line 348, ../../sass/objects/profile.sass */
+/* line 349, ../../sass/objects/profile.sass */
 .regular-help-name {
   margin: 10px 0;
   color: #228FDF;
@@ -1372,11 +1373,11 @@ i.animals.empty {
   font-weight: bold;
 }
 
-/* line 354, ../../sass/objects/profile.sass */
+/* line 355, ../../sass/objects/profile.sass */
 .select-date {
   margin: 20px 0;
 }
-/* line 356, ../../sass/objects/profile.sass */
+/* line 357, ../../sass/objects/profile.sass */
 .select-date select {
   display: block;
   width: 100%;
@@ -1388,63 +1389,64 @@ i.animals.empty {
   font-weight: bold;
   color: #228FDF;
   outline: 0;
+  background: none;
 }
 
-/* line 368, ../../sass/objects/profile.sass */
+/* line 370, ../../sass/objects/profile.sass */
 .regular-help-history {
   padding: 20px;
   border-bottom: 1px solid #ccc;
 }
-/* line 371, ../../sass/objects/profile.sass */
+/* line 373, ../../sass/objects/profile.sass */
 .regular-help-history .title {
   margin: 8px 0;
 }
 
-/* line 374, ../../sass/objects/profile.sass */
+/* line 376, ../../sass/objects/profile.sass */
 .help-history-fund {
   display: block;
   color: #228FDF;
   margin: 8px 0 4px 0;
 }
 
-/* line 379, ../../sass/objects/profile.sass */
+/* line 381, ../../sass/objects/profile.sass */
 .help-history-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-/* line 383, ../../sass/objects/profile.sass */
+/* line 385, ../../sass/objects/profile.sass */
 .help-history-list li {
   border-bottom: 1px solid #ccc;
   padding: 10px 0 15px 0;
 }
-/* line 386, ../../sass/objects/profile.sass */
+/* line 388, ../../sass/objects/profile.sass */
 .help-history-list li:last-child {
   border-bottom: none;
 }
 
-/* line 390, ../../sass/objects/profile.sass */
+/* line 392, ../../sass/objects/profile.sass */
 .help-history-item h4 {
   margin: 10px 0;
   font-size: 16px;
 }
 
-/* line 394, ../../sass/objects/profile.sass */
+/* line 396, ../../sass/objects/profile.sass */
 .help-history-body {
   margin: 0 0 15px 0;
 }
-/* line 396, ../../sass/objects/profile.sass */
+/* line 398, ../../sass/objects/profile.sass */
 .help-history-body .title {
   color: #808080;
   margin: 2px 0;
 }
-/* line 399, ../../sass/objects/profile.sass */
+/* line 401, ../../sass/objects/profile.sass */
 .help-history-body a {
   font-weight: bold;
   font-size: 16px;
 }
 
-/* line 404, ../../sass/objects/profile.sass */
+/* line 406, ../../sass/objects/profile.sass */
 .help-history-footer .title {
   margin: 2px 0;
   color: #808080;
