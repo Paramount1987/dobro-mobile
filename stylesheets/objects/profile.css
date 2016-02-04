@@ -1207,18 +1207,27 @@ i.animals.empty {
   height: 70px;
 }
 
-/* line 241, ../../sass/objects/profile.sass */
+/* line 240, ../../sass/objects/profile.sass */
+.icon-regular {
+  width: 60px;
+  height: 60px;
+  background: url("../images/images.png") no-repeat;
+  background-size: 350px 500px;
+  background-position: -12px -424px;
+}
+
+/* line 247, ../../sass/objects/profile.sass */
 .tease-list-title {
   font-size: 18px;
   color: #228FDF;
 }
 
-/* line 245, ../../sass/objects/profile.sass */
+/* line 251, ../../sass/objects/profile.sass */
 .tease-list-body {
   font-size: 14px;
 }
 
-/* line 248, ../../sass/objects/profile.sass */
+/* line 254, ../../sass/objects/profile.sass */
 .tease-link-footer {
   display: block;
   border-radius: 7px;
@@ -1228,22 +1237,22 @@ i.animals.empty {
   font-size: 18px;
   font-weight: bold;
 }
-/* line 256, ../../sass/objects/profile.sass */
+/* line 262, ../../sass/objects/profile.sass */
 .tease-link-footer.blue-bg {
   background: #228FDF;
 }
-/* line 258, ../../sass/objects/profile.sass */
+/* line 264, ../../sass/objects/profile.sass */
 .tease-link-footer.orange-bg {
   background: #ff801e;
 }
 
 @media (min-width: 767px) {
-  /* line 262, ../../sass/objects/profile.sass */
+  /* line 268, ../../sass/objects/profile.sass */
   .profile-tease-list {
     font-size: 0;
     margin: 0 0 0 -2%;
   }
-  /* line 265, ../../sass/objects/profile.sass */
+  /* line 271, ../../sass/objects/profile.sass */
   .profile-tease-list li {
     display: inline-block;
     vertical-align: top;
@@ -1254,13 +1263,13 @@ i.animals.empty {
     box-sizing: border-box;
   }
 }
-/* line 273, ../../sass/objects/profile.sass */
+/* line 279, ../../sass/objects/profile.sass */
 .content-news-header {
   position: relative;
   min-height: 70px;
   padding: 0 0 0 80px;
 }
-/* line 277, ../../sass/objects/profile.sass */
+/* line 283, ../../sass/objects/profile.sass */
 .content-news-header .content-news-photo {
   position: absolute;
   top: 0;
@@ -1271,26 +1280,26 @@ i.animals.empty {
   border-radius: 4px;
   overflow: hidden;
 }
-/* line 286, ../../sass/objects/profile.sass */
+/* line 292, ../../sass/objects/profile.sass */
 .content-news-header .content-news-photo .photo {
   width: 70px;
   height: 70px;
 }
 
-/* line 290, ../../sass/objects/profile.sass */
+/* line 296, ../../sass/objects/profile.sass */
 .content-news-header h4 {
   color: #228FDF;
   padding-top: 0 !important;
 }
 
-/* line 295, ../../sass/objects/profile.sass */
+/* line 301, ../../sass/objects/profile.sass */
 .regular-help-list {
   padding: 10px;
   margin: 0;
   list-style: none;
 }
 
-/* line 300, ../../sass/objects/profile.sass */
+/* line 306, ../../sass/objects/profile.sass */
 .regular-help-item {
   background: #fff;
   border-radius: 10px;
@@ -1299,73 +1308,73 @@ i.animals.empty {
   margin: 5px 0 10px 0;
   padding: 10px;
 }
-/* line 307, ../../sass/objects/profile.sass */
+/* line 313, ../../sass/objects/profile.sass */
 .regular-help-item .btn {
   float: none !important;
   display: block;
 }
-/* line 310, ../../sass/objects/profile.sass */
+/* line 316, ../../sass/objects/profile.sass */
 .regular-help-item .title {
   margin: 5px 0;
   font-size: 21px;
   color: #228FDF;
 }
 
-/* line 315, ../../sass/objects/profile.sass */
+/* line 321, ../../sass/objects/profile.sass */
 .regular-help-header {
   color: #808080;
   border-bottom: 1px solid #ccc;
 }
-/* line 318, ../../sass/objects/profile.sass */
+/* line 324, ../../sass/objects/profile.sass */
 .regular-help-header b {
   color: #000;
 }
 
-/* line 321, ../../sass/objects/profile.sass */
+/* line 327, ../../sass/objects/profile.sass */
 .regular-help-body {
   padding: 14px 0 10px 0;
   border-bottom: 1px solid #ccc;
 }
 
-/* line 325, ../../sass/objects/profile.sass */
+/* line 331, ../../sass/objects/profile.sass */
 .regular-help-footer {
   padding: 14px 0 5px 0;
 }
-/* line 327, ../../sass/objects/profile.sass */
+/* line 333, ../../sass/objects/profile.sass */
 .regular-help-footer .btn {
   margin-top: 25px;
 }
 
-/* line 330, ../../sass/objects/profile.sass */
+/* line 336, ../../sass/objects/profile.sass */
 .regular-help-body-title,
 .regular-help-footer-title {
   color: #808080;
   margin: 2px 0;
 }
 
-/* line 335, ../../sass/objects/profile.sass */
+/* line 341, ../../sass/objects/profile.sass */
 .regular-help-link,
 .regular-footer-link {
   display: block;
   margin: 10px 0;
 }
 
-/* line 340, ../../sass/objects/profile.sass */
+/* line 346, ../../sass/objects/profile.sass */
 .regular-help-date {
   padding: 20px 20px 30px 20px;
   border-bottom: 1px solid #ccc;
 }
-/* line 343, ../../sass/objects/profile.sass */
+/* line 349, ../../sass/objects/profile.sass */
 .regular-help-date .title {
   margin: 5px 0;
 }
-/* line 345, ../../sass/objects/profile.sass */
+/* line 351, ../../sass/objects/profile.sass */
 .regular-help-date .btn {
   display: block;
   float: none !important;
 }
 
-/* line 349, ../../sass/objects/profile.sass */
+/* line 355, ../../sass/objects/profile.sass */
 .regular-help-name {
   margin: 10px 0;
   color: #228FDF;
@@ -1373,80 +1382,80 @@ i.animals.empty {
   font-weight: bold;
 }
 
-/* line 355, ../../sass/objects/profile.sass */
+/* line 361, ../../sass/objects/profile.sass */
 .select-date {
   margin: 20px 0;
 }
-/* line 357, ../../sass/objects/profile.sass */
+/* line 363, ../../sass/objects/profile.sass */
 .select-date select {
   display: block;
   width: 100%;
   height: 40px;
   padding: 0 0 0 10px;
-  border-color: #E7EBEC;
+  border-color: #ccc;
   border-radius: 6px;
   font-size: 18px;
   font-weight: bold;
   color: #228FDF;
   outline: 0;
-  background: none;
+  background: #E7EBEC;
 }
 
-/* line 370, ../../sass/objects/profile.sass */
+/* line 376, ../../sass/objects/profile.sass */
 .regular-help-history {
   padding: 20px;
   border-bottom: 1px solid #ccc;
 }
-/* line 373, ../../sass/objects/profile.sass */
+/* line 379, ../../sass/objects/profile.sass */
 .regular-help-history .title {
   margin: 8px 0;
 }
 
-/* line 376, ../../sass/objects/profile.sass */
+/* line 382, ../../sass/objects/profile.sass */
 .help-history-fund {
   display: block;
   color: #228FDF;
   margin: 8px 0 4px 0;
 }
 
-/* line 381, ../../sass/objects/profile.sass */
+/* line 387, ../../sass/objects/profile.sass */
 .help-history-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-/* line 385, ../../sass/objects/profile.sass */
+/* line 391, ../../sass/objects/profile.sass */
 .help-history-list li {
   border-bottom: 1px solid #ccc;
   padding: 10px 0 15px 0;
 }
-/* line 388, ../../sass/objects/profile.sass */
+/* line 394, ../../sass/objects/profile.sass */
 .help-history-list li:last-child {
   border-bottom: none;
 }
 
-/* line 392, ../../sass/objects/profile.sass */
+/* line 398, ../../sass/objects/profile.sass */
 .help-history-item h4 {
   margin: 10px 0;
   font-size: 16px;
 }
 
-/* line 396, ../../sass/objects/profile.sass */
+/* line 402, ../../sass/objects/profile.sass */
 .help-history-body {
   margin: 0 0 15px 0;
 }
-/* line 398, ../../sass/objects/profile.sass */
+/* line 404, ../../sass/objects/profile.sass */
 .help-history-body .title {
   color: #808080;
   margin: 2px 0;
 }
-/* line 401, ../../sass/objects/profile.sass */
+/* line 407, ../../sass/objects/profile.sass */
 .help-history-body a {
   font-weight: bold;
   font-size: 16px;
 }
 
-/* line 406, ../../sass/objects/profile.sass */
+/* line 412, ../../sass/objects/profile.sass */
 .help-history-footer .title {
   margin: 2px 0;
   color: #808080;
