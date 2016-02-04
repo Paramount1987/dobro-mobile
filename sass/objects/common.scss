@@ -194,6 +194,16 @@ a {
 	@include border-radius(5px, 5px, 5px, 5px);
 }
 
+.btn.btn-blue {
+	background-color: #228fdf;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	text-align: center;
+	width: 100%;
+	@include border-radius(5px, 5px, 5px, 5px);
+}
+
 .btn-pic-sm{
 	display: inline-block;
 	width: 177px;

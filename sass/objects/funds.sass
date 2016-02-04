@@ -51,17 +51,22 @@
 			width: 50%
 	.content-info.help:nth-child(odd)
 		&.wider
-			@include calc('width', '50% - 25px')
-			margin-right: 5px
+			@include calc('width', '100% - 25px')
+			margin-right: 0
 			margin-left: 0px
 	.content-info.help:nth-child(even)
 		&.wider
-			@include calc('width', '50% - 25px')
+			@include calc('width', '100% - 25px')
 			margin-right: 0px
-			margin-left: 5px
+			margin-left: 0
 .dog
 	@extend .absolute-left
 	@extend .imagepart
 	@include background-position(84px, 43px, -117px, -256px)
 	right: 15px
 	top: -43px
+
+////////////////////content-info help
+.content-info.help
+	.btn-grey
+		margin: 10px 0

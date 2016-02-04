@@ -27,9 +27,12 @@
 			@extend .pull-left
 			height: 85px
 			width: 85px
-			@include border-radius-equals(5px)
+			@include border-radius-equals(85px)
 			background-color: lightgray
 			overflow: hidden
+			img
+				width: 85px
+				height: 85px
 		.profile-info
 			@extend .pull-left
 			padding-left: 10px
@@ -199,3 +202,205 @@
 
 .detach.aviable
 	background-position: 0 -1px
+
+.content.profile-tease
+	background-color: #daf4fe
+
+.profile-tease-list
+	padding: 0
+	margin: 0
+	list-style: none
+	li
+		background: #fff
+		padding: 10px 7px
+		margin: 10px 0 10px 0	
+		border-radius: 10px
+		border-right: 2px solid #ccc
+		border-bottom: 2px solid #ccc
+
+.tease-list-body
+	margin: 10px 0
+	position: relative
+	min-height: 70px
+	padding: 0 0 0 80px
+
+.tease-body-left
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 10
+	width: 70px
+	height: 70px
+	border-radius: 4px
+	overflow: hidden
+	.photo
+		width: 70px
+		height: 70px
+
+
+.tease-list-title
+	font-size: 18px
+	color: #228FDF
+
+.tease-list-body
+	font-size: 14px
+
+.tease-link-footer
+	display: block
+	border-radius: 7px
+	text-align: center
+	color: #fff
+	line-height: 40px
+	font-size: 18px
+	font-weight: bold
+	&.blue-bg
+		background: #228FDF
+	&.orange-bg
+		background: #ff801e	
+
+@media (min-width: 767px)
+	.profile-tease-list
+		font-size: 0
+		margin: 0 0 0 -2%
+		li
+			display: inline-block
+			vertical-align: top
+			width: 48%
+			margin-left: 2%
+			@include box-sizing(border-box)
+
+/////////////////////////////////content-news-header
+.content-news-header
+	position: relative
+	min-height: 70px
+	padding: 0 0 0 80px
+	.content-news-photo
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 10
+		width: 70px
+		height: 70px
+		border-radius: 4px
+		overflow: hidden
+		.photo
+			width: 70px
+			height: 70px
+
+.content-news-header h4
+	color: #228FDF
+
+//////////////////////////////regular-help-list
+.regular-help-list
+	padding: 10px
+	margin: 0
+	list-style: none
+
+.regular-help-item
+	background: #fff
+	border-radius: 10px
+	border-bottom: 2px solid #ccc
+	border-right: 2px solid #ccc
+	margin: 5px 0 10px 0
+	padding: 10px
+	.btn
+		float: none !important
+		display: block
+	.title
+		margin: 5px 0
+		font-size: 21px
+		color: #228FDF
+
+.regular-help-header
+	color: #808080
+	border-bottom: 1px solid #ccc
+	b
+		color: #000
+
+.regular-help-body
+	padding: 14px 0 10px 0
+	border-bottom: 1px solid #ccc
+
+.regular-help-footer
+	padding: 14px 0 5px 0
+	.btn
+		margin-top: 25px
+
+.regular-help-body-title,
+.regular-help-footer-title
+	color: #808080
+	margin: 2px 0
+
+.regular-help-link,
+.regular-footer-link
+	display: block
+	margin: 10px 0
+
+.regular-help-date
+	padding: 20px 20px 30px 20px
+	border-bottom: 1px solid #ccc
+	.title
+		margin: 5px 0
+	.btn
+		display: block
+		float: none !important	
+
+.regular-help-name
+	margin: 10px 0
+	color: #228FDF
+	font-size: 21px
+	font-weight: bold
+
+.select-date
+	margin: 20px 0
+	select
+		display: block
+		width: 100%
+		height: 40px
+		padding: 0 0 0 10px
+		border-color: #E7EBEC
+		border-radius: 6px
+		font-size: 18px
+		font-weight: bold
+		color: #228FDF
+		outline: 0
+
+.regular-help-history
+	padding: 20px
+	border-bottom: 1px solid #ccc
+	.title
+		margin: 8px 0
+
+.help-history-fund
+	display: block
+	color: #228FDF
+	margin: 8px 0 4px 0
+
+.help-history-list
+	padding: 0
+	margin: 0
+	list-style: none
+	li
+		border-bottom: 1px solid #ccc
+		padding: 10px 0 15px 0
+	li:last-child
+		border-bottom: none
+
+.help-history-item
+	h4
+		margin: 10px 0
+		font-size: 16px
+
+.help-history-body
+	margin: 0 0 15px 0
+	.title	
+		color: #808080
+		margin: 2px 0		
+	a
+		font-weight: bold
+		font-size: 16px
+
+.help-history-footer
+	.title
+		margin: 2px 0
+		color: #808080
