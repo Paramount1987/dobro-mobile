@@ -451,13 +451,12 @@ i.animals.empty {
 	list-style: none;
 	padding: 0px;
 	@include center-block(0px, 0px);
-	min-width: 300px;
-	max-width: 500px;
 }
 
 .socials-icons-big li {
-	@extend .pull-left;
-	padding: 0px 5px 10px 5px;
+	vertical-align: top;
+	display: inline-block;
+	padding: 0px 3px 10px 3px;
 }
 
 .socials-icons-big li a.social-mail {

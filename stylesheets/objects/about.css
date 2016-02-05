@@ -11,7 +11,7 @@
   src: url("/fonts/MyriadPro-Regular.otf");
 }
 /* line 17, ../../sass/objects/common.scss */
-.pull-left, .btn.btn-ready, .btn span, .btn.btn-grey, .help-inline, .daw, .back-arrow, .history-title, i.adult, i.children, i.elderly, i.animals, .tabs, .tabs li, .socials-icons-big li, .socials-icons-big li a.social-mail, .socials-icons-big li a.social-odnoklassniki, .socials-icons-big li a.social-twitter, .socials-icons-big li a.social-facebook, .socials-icons-big li a.social-vk, .add-icon, .widthpadding, .plans, .stars, .usefull, .man-of-kindness, .successfull-projects, .help-icon-big, .pounch-icon-big, .urgently-icon-big, .heart-icon, .player, .content .idea, .content .idea-title, .content .needhelp .aboutlink, .content .footer.about .links {
+.pull-left, .btn.btn-ready, .btn span, .btn.btn-grey, .help-inline, .daw, .back-arrow, .history-title, i.adult, i.children, i.elderly, i.animals, .tabs, .tabs li, .socials-icons-big li a.social-mail, .socials-icons-big li a.social-odnoklassniki, .socials-icons-big li a.social-twitter, .socials-icons-big li a.social-facebook, .socials-icons-big li a.social-vk, .add-icon, .widthpadding, .plans, .stars, .usefull, .man-of-kindness, .successfull-projects, .help-icon-big, .pounch-icon-big, .urgently-icon-big, .heart-icon, .player, .content .idea, .content .idea-title, .content .needhelp .aboutlink, .content .footer.about .links {
   float: left !important;
   position: relative;
 }
@@ -604,69 +604,69 @@ i.animals.empty {
   list-style: none;
   padding: 0px;
   margin: 0px auto 0px auto;
-  min-width: 300px;
-  max-width: 500px;
 }
 
-/* line 458, ../../sass/objects/common.scss */
+/* line 456, ../../sass/objects/common.scss */
 .socials-icons-big li {
-  padding: 0px 5px 10px 5px;
+  vertical-align: top;
+  display: inline-block;
+  padding: 0px 3px 10px 3px;
 }
 
-/* line 463, ../../sass/objects/common.scss */
+/* line 462, ../../sass/objects/common.scss */
 .socials-icons-big li a.social-mail {
   width: 90px;
   height: 70px;
   background-position: -294px -199px;
 }
 
-/* line 468, ../../sass/objects/common.scss */
+/* line 467, ../../sass/objects/common.scss */
 .socials-icons-big li a.social-odnoklassniki {
   width: 90px;
   height: 70px;
   background-position: -294px -270px;
 }
 
-/* line 473, ../../sass/objects/common.scss */
+/* line 472, ../../sass/objects/common.scss */
 .socials-icons-big li a.social-twitter {
   width: 90px;
   height: 70px;
   background-position: -294px -341px;
 }
 
-/* line 478, ../../sass/objects/common.scss */
+/* line 477, ../../sass/objects/common.scss */
 .socials-icons-big li a.social-facebook {
   width: 90px;
   height: 70px;
   background-position: -294px -413px;
 }
 
-/* line 483, ../../sass/objects/common.scss */
+/* line 482, ../../sass/objects/common.scss */
 .socials-icons-big li a.social-vk {
   width: 90px;
   height: 70px;
   background-position: -294px -484px;
 }
 
-/* line 489, ../../sass/objects/common.scss */
+/* line 488, ../../sass/objects/common.scss */
 .add-icon {
   width: 23px;
   height: 23px;
   background-position: -240px -200px;
 }
 
-/* line 494, ../../sass/objects/common.scss */
+/* line 493, ../../sass/objects/common.scss */
 .bordered {
   border-bottom: 1px solid #cdd4d8;
 }
 
-/* line 498, ../../sass/objects/common.scss */
+/* line 497, ../../sass/objects/common.scss */
 .woutpadding {
   padding: 10px 0px !important;
   width: 100% !important;
 }
 
-/* line 502, ../../sass/objects/common.scss */
+/* line 501, ../../sass/objects/common.scss */
 .woutpadding .payment-info li {
   width: -webkit-calc(100% - 20px);
   width: -moz-calc(100% - 20px);
@@ -674,12 +674,12 @@ i.animals.empty {
   padding: 10px !important;
 }
 
-/* line 506, ../../sass/objects/common.scss */
+/* line 505, ../../sass/objects/common.scss */
 .woutpadding .text {
   font-size: 14px;
 }
 
-/* line 509, ../../sass/objects/common.scss */
+/* line 508, ../../sass/objects/common.scss */
 .woutpadding .days-over {
   width: 155px;
   margin: 10px 0 0 0;
@@ -688,7 +688,7 @@ i.animals.empty {
   text-align: center;
 }
 
-/* line 517, ../../sass/objects/common.scss */
+/* line 516, ../../sass/objects/common.scss */
 .widthpadding {
   padding: 0px 10px;
   width: -webkit-calc(100% - 20px);
@@ -696,7 +696,7 @@ i.animals.empty {
   width: calc(100% - 20px);
 }
 
-/* line 527, ../../sass/objects/common.scss */
+/* line 526, ../../sass/objects/common.scss */
 .plans {
   margin: 12px;
   width: 24px;
@@ -704,7 +704,7 @@ i.animals.empty {
   background-position: -6px -5px;
 }
 
-/* line 533, ../../sass/objects/common.scss */
+/* line 532, ../../sass/objects/common.scss */
 .stars {
   margin: 12px 8px 12px 12px;
   width: 30px;
@@ -712,7 +712,7 @@ i.animals.empty {
   background-position: -130px -4px;
 }
 
-/* line 539, ../../sass/objects/common.scss */
+/* line 538, ../../sass/objects/common.scss */
 .usefull {
   margin: 12px;
   width: 24px;
@@ -720,7 +720,7 @@ i.animals.empty {
   background-position: -36px -3px;
 }
 
-/* line 545, ../../sass/objects/common.scss */
+/* line 544, ../../sass/objects/common.scss */
 .man-of-kindness {
   margin: 12px;
   width: 24px;
@@ -728,7 +728,7 @@ i.animals.empty {
   background-position: -65px -3px;
 }
 
-/* line 551, ../../sass/objects/common.scss */
+/* line 550, ../../sass/objects/common.scss */
 .successfull-projects {
   width: 28px;
   height: 28px;
@@ -736,19 +736,19 @@ i.animals.empty {
   margin: 12px 12px 12px 9px;
 }
 
-/* line 558, ../../sass/objects/common.scss */
+/* line 557, ../../sass/objects/common.scss */
 .whitebg {
   background-color: #ffffff !important;
 }
 
-/* line 562, ../../sass/objects/common.scss */
+/* line 561, ../../sass/objects/common.scss */
 .help-icon-big {
   width: 56px;
   height: 36px;
   background-position: -229px -423px;
 }
 
-/* line 567, ../../sass/objects/common.scss */
+/* line 566, ../../sass/objects/common.scss */
 .pounch-icon-big {
   width: 44px;
   height: 36px;
@@ -756,52 +756,52 @@ i.animals.empty {
   margin-right: 12px;
 }
 
-/* line 573, ../../sass/objects/common.scss */
+/* line 572, ../../sass/objects/common.scss */
 .urgently-icon-big {
   width: 56px;
   height: 36px;
   background-position: -117px -425px;
 }
 
-/* line 579, ../../sass/objects/common.scss */
+/* line 578, ../../sass/objects/common.scss */
 .heart-icon {
   width: 50px;
   height: 47px;
   background-position: -118px -481px;
 }
 
-/* line 585, ../../sass/objects/common.scss */
+/* line 584, ../../sass/objects/common.scss */
 .arrow-down-big {
   width: 20px;
   height: 12px;
   background-position: -335px -52px;
 }
 
-/* line 591, ../../sass/objects/common.scss */
+/* line 590, ../../sass/objects/common.scss */
 .arrow-down-big.up {
   width: 20px;
   height: 12px;
   background-position: -361px -52px;
 }
 
-/* line 594, ../../sass/objects/common.scss */
+/* line 593, ../../sass/objects/common.scss */
 .arrow-down-small {
   width: 20px;
   height: 12px;
   background-position: -335px -28px;
 }
 
-/* line 600, ../../sass/objects/common.scss */
+/* line 599, ../../sass/objects/common.scss */
 .normaltext {
   font-weight: normal !important;
 }
 
-/* line 604, ../../sass/objects/common.scss */
+/* line 603, ../../sass/objects/common.scss */
 .darkblue {
   background-color: #d4ebf4;
 }
 
-/* line 608, ../../sass/objects/common.scss */
+/* line 607, ../../sass/objects/common.scss */
 .burger:active {
   background-color: #147fcb;
 }
@@ -816,13 +816,13 @@ i.animals.empty {
   clear: both;
 }
 
-/* line 616, ../../sass/objects/common.scss */
+/* line 615, ../../sass/objects/common.scss */
 .title-lg {
   font-size: 18px !important;
   margin: 20px 0 0 0;
 }
 
-/* line 621, ../../sass/objects/common.scss */
+/* line 620, ../../sass/objects/common.scss */
 .title-purse {
   position: relative;
   padding: 0 0 0 40px;
@@ -832,7 +832,7 @@ i.animals.empty {
   line-height: 25px;
 }
 
-/* line 630, ../../sass/objects/common.scss */
+/* line 629, ../../sass/objects/common.scss */
 .title-purse:before {
   content: "";
   position: absolute;
@@ -845,7 +845,7 @@ i.animals.empty {
   background-position: -448px -99px;
 }
 
-/* line 642, ../../sass/objects/common.scss */
+/* line 641, ../../sass/objects/common.scss */
 .thanks-text {
   font-size: 16px;
   line-height: 20px;
